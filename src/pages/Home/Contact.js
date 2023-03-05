@@ -3,8 +3,8 @@ import React from "react";
 function Contact() {
   return (
     <div className="bg-primary min-h-screen">
-      <h1 className="text-center text-3xl text-white">Send me a review </h1>
-      <div class="flex justify-center items-center h-screen">
+      <h1 className="text-center text-5xl text-black">Send me a review </h1>
+      <div class="flex justify-center items-center min-h-screen">
         <form
           method="post"
           action="mailto:sagar-adhikaree@gmail.com"
@@ -25,7 +25,7 @@ function Contact() {
           </div>
           <div class="mb-4">
             <label class="block text-black font-bold mb-2" for="subject">
-             Subject
+              Subject
             </label>
             <input
               class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
