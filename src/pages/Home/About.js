@@ -15,7 +15,7 @@ function About() {
             <div class="flex items-center">
               <div class="w-1/2 text-center">
                 <img
-                  src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80"
+                  src="https://scontent.fktm6-1.fna.fbcdn.net/v/t1.6435-9/188601978_4620907477924652_6266218967972445976_n.jpg?stp=dst-jpg_p720x720&_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=B0FFlcs9XXEAX8xmWWl&_nc_ht=scontent.fktm6-1.fna&oh=00_AfAtuyIiU-FCb7dmTdk6_hqQJMsmKAL3ZzJ699g6SYHQ6g&oe=642C52C3"
                   alt="Profile picture"
                   class="rounded-full w-80 mx-auto mb-4 pb-6"
                 />
