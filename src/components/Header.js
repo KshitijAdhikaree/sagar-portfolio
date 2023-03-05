@@ -14,16 +14,16 @@ function Header() {
           <div className="flex-grow"></div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-baseline">
-              <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-gray-700">
+              <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-white hover:text-black">
                 Home
               </Link>
-              <Link to="/about" className="px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-gray-700">
+              <Link to="/about" className="px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-white hover:text-black">
                 About
               </Link>
-              <Link to="/publications" className="px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-gray-700">
+              <Link to="/publications" className="px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-white hover:text-black">
                 Publications
               </Link>
-              <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-gray-700">
+              <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-white hover:text-black">
                 Contact
               </Link>
             </div>
