@@ -11,7 +11,7 @@ function Footer() {
           </p>
           <a
             href="https://kshitijadhikaree.com.np/"
-            className="text-indigo-500 hover:text-indigo-400"
+            className="text-[#72910c] hover:text-indigo-400"
           >
             Kshitij Adhikaree
           </a>

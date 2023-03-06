@@ -26,7 +26,7 @@ const Contact = () => {
   return (
     <div className="bg-primary flex flex-col justify-center items-center h-screen">
       <h1 className="text-4xl font-bold mb-4">Send Me a Message</h1>
-      <div className="bg-white p-8 rounded-md shadow-lg w-1/2">
+      <div className="bg-[#197d8c] p-8 rounded-md shadow-lg w-1/2">
         
         <div className="flex mb-4 justify-center">
           <a
@@ -34,34 +34,34 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter className="text-2xl text-gray-500 hover:text-primary mr-4" />
+            <FaTwitter className="text-2xl text-black hover:text-headerbg mr-4" />
           </a>
           <a
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagram className="text-2xl text-gray-500 hover:text-primary mr-4" />
+            <FaInstagram className="text-2xl text-black hover:text-headerbg mr-4" />
           </a>
           <a
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook className="text-2xl text-gray-500 hover:text-primary mr-4" />
+            <FaFacebook className="text-2xl text-black hover:text-headerbg mr-4" />
           </a>
           <a
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="text-2xl text-gray-500 hover:text-primary" />
+            <FaLinkedin className="text-2xl text-black hover:text-headerbg" />
           </a>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label
-              className="block text-gray-700 font-bold mb-2"
+              className="block text-black font-bold mb-2"
               htmlFor="name"
             >
               Name
@@ -77,7 +77,7 @@ const Contact = () => {
           </div>
           <div className="mb-4">
             <label
-              className="block text-gray-700 font-bold mb-2"
+              className="block text-black font-bold mb-2"
               htmlFor="email"
             >
               Email
@@ -93,7 +93,7 @@ const Contact = () => {
           </div>
           <div className="mb-4">
             <label
-              className="block text-gray-700 font-bold mb-2"
+              className="block text-black font-bold mb-2"
               htmlFor="message"
             >
               Message
