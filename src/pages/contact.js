@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
@@ -10,7 +10,6 @@ import {
   FacebookIcon,
   LinkedInIcon,
 } from '@/components/Icons'
-
 
 function Contact() {
   const [name, setName] = useState('')
@@ -73,16 +72,16 @@ function Contact() {
                 </h1>
                 <div className='flex flex-row ml-32 mt-6 sm:ml-2 sm:justify-center md:justify-start md:ml-32 lg:ml-48 sm:mb-4'>
                   <Link href='/'>
-                    <LinkedInIcon className='w-[40px] xs:w-[35px] md:w-[60px] lg:w-[80px] mr-4 2xl:w-[40px]' />
+                    <LinkedInIcon className='w-[80px] xs:w-[35px] md:w-[60px] lg:w-[80px] mr-4 2xl:w-[40px]' />
                   </Link>
                   <Link href='/'>
-                    <TwitterIcon className='w-[40px] xs:w-[35px] md:w-[60px] lg:w-[80px] mx-4 2xl:w-[40px]' />
+                    <TwitterIcon className='w-[80px] xs:w-[35px] md:w-[60px] lg:w-[80px] mx-4 2xl:w-[40px]' />
                   </Link>
                   <Link href='/'>
-                    <InstagramIcon className='w-[50px] xs:w-[45px] md:w-[80px] lg:w-[80px] mx-4 -mt-3 md:-mt-5 2xl:w-[50px] xs:-mt-3'/>
+                    <InstagramIcon className='w-[100px] xs:w-[45px] md:w-[80px] lg:w-[80px] mx-4 -mt-6 md:-mt-5 2xl:w-[50px] xs:-mt-3 2xl:-mt-3' />
                   </Link>
                   <Link href='/'>
-                    <FacebookIcon className='w-[40px] xs:w-[35px] md:w-[60px] lg:w-[80px] ml-4 2xl:w-[40px]' />
+                    <FacebookIcon className='w-[80px] xs:w-[35px] md:w-[60px] lg:w-[80px] ml-4 2xl:w-[40px]' />
                   </Link>
                 </div>
               </div>
