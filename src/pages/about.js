@@ -18,9 +18,9 @@ const about = () => {
       <TransitionEffect />
 
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light xs:-mx-2'>
-        <Layout className='pt-0 md:p-16 sm:pt-2'>
+        <Layout className='pt-0 md:p-16 sm:pt-2 '>
           <div className='flex items-center justify-between w-full lg:flex-col'>
-            <div className='w-1/2 lg:w-full md:w-full md:-mt-8'>
+            <div className='w-1/2 lg:w-full md:w-full md:-mt-8 '>
               <div
                 className='w-[420px] h-[490px] bg-primaryDark dark:bg-primary border-[12px] border-dark transition-[border-radius] duration-[0.5s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] rounded-[10px] 
               shadow-[inset_0_-3em_3em_rgba(0,0,0,0.1),0_0_0_2px_rgb(190,190,190),0.3em_0.3em_1em_rgba(0,0,0,0.3)]
