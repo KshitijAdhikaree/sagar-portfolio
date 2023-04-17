@@ -49,7 +49,7 @@ const about = () => {
                   Resume <LinkArrow className={'w-6 ml-1'} />
                 </Link>
                 <Link
-                  href='https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=adhikareekshitij@gmail.com&subject=Unable%20to%20reach%20you&body=Hello%2C%0A%0AI%20tried%20contacting%20you%20today%20but%20you%20seem%20to%20have%20missed%20my%20call.%20%0A%0APlease%20return%20my%20call%20as%20soon%20as%20you%E2%80%99re%20available.%20%0A%0AIn%20any%20case%2C%20I%20will%20try%20ringing%20you%20at%20a%20later%20time.%0A%0A%0ATy%2C%0A%0A%0A%0A'
+                  href='https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=adhikaree.sagar@gmail.com&subject=Unable%20to%20reach%20you&body=Hello%2C%0A%0AI%20tried%20contacting%20you%20today%20but%20you%20seem%20to%20have%20missed%20my%20call.%20%0A%0APlease%20return%20my%20call%20as%20soon%20as%20you%E2%80%99re%20available.%20%0A%0AIn%20any%20case%2C%20I%20will%20try%20ringing%20you%20at%20a%20later%20time.%0A%0A%0ATy%2C%0A%0A%0A%0A'
                   target={'_blank'}
                   className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base xs:ml-0'
                 >
@@ -114,11 +114,11 @@ const about = () => {
             <li className='mt-6'>
               Following the completion of my PhD, I went on to pursue
               postdoctoral research at several prominent institutions, including
-              NASA&apos;s Goddard Space Flight Center and the Max Planck Institute
-              for Astrophysics. These experiences allowed me to deepen my
-              expertise in a variety of areas, from the study of gravitational
-              waves to the behavior of black holes and the structure of
-              galaxies.
+              NASA&apos;s Goddard Space Flight Center and the Max Planck
+              Institute for Astrophysics. These experiences allowed me to deepen
+              my expertise in a variety of areas, from the study of
+              gravitational waves to the behavior of black holes and the
+              structure of galaxies.
             </li>
             <li className='mt-6'>
               Throughout my education and training as an astrophysicist, I have
