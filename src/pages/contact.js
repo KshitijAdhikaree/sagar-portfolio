@@ -12,7 +12,7 @@ import {
 } from '@/components/Icons'
 
 
-function contact() {
+function Contact() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -73,16 +73,16 @@ function contact() {
                 </h1>
                 <div className='flex flex-row ml-32 mt-6 sm:ml-2 sm:justify-center md:justify-start md:ml-32 lg:ml-48 sm:mb-4'>
                   <Link href='/'>
-                    <LinkedInIcon className='w-[40px] md:w-[60px] lg:w-[80px] mr-4' />
+                    <LinkedInIcon className='w-[40px] xs:w-[35px] md:w-[60px] lg:w-[80px] mr-4 2xl:w-[40px]' />
                   </Link>
                   <Link href='/'>
-                    <TwitterIcon className='w-[40px] md:w-[60px] lg:w-[80px] mx-4' />
+                    <TwitterIcon className='w-[40px] xs:w-[35px] md:w-[60px] lg:w-[80px] mx-4 2xl:w-[40px]' />
                   </Link>
                   <Link href='/'>
-                    <InstagramIcon className='w-[50px] md:w-[80px] lg:w-[100px] mx-4 -mt-3 md:-mt-5'/>
+                    <InstagramIcon className='w-[50px] xs:w-[45px] md:w-[80px] lg:w-[80px] mx-4 -mt-3 md:-mt-5 2xl:w-[50px] xs:-mt-3'/>
                   </Link>
                   <Link href='/'>
-                    <FacebookIcon className='w-[40px] md:w-[60px] lg:w-[80px] ml-4' />
+                    <FacebookIcon className='w-[40px] xs:w-[35px] md:w-[60px] lg:w-[80px] ml-4 2xl:w-[40px]' />
                   </Link>
                 </div>
               </div>
@@ -160,4 +160,4 @@ function contact() {
   )
 }
 
-export default contact
+export default Contact

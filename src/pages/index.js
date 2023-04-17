@@ -21,18 +21,18 @@ function Home() {
             alt='background'
             className='-mt-32 h-[101vh] sm:h-[120vh]'
           />
-          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-6 '>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-6 xs:mt-2 xs:-ml-2'>
             <AnimatedText
               text='Sagar Adhikari'
-              className='xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4'
+              className='xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl'
             />
             <AnimatedText
               text='Study celestial bodies and the universe.'
-              className='!text-3xl xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4'
+              className='!text-3xl xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl'
             />
             <AnimatedText
               text='Research dark matter, black holes, and more.'
-              className='!text-3xl xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4'
+              className='!text-3xl xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl'
             />
             <ScrollDown />
           </div>
@@ -42,9 +42,9 @@ function Home() {
         <Layout>
           <AnimatedText
             text='Area Of Expertise'
-            className='xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center mb-8'
+            className='xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center mb-8 xs:!text-xl'
           />
-          <div className='text-dark text-xl text-justify mx-40 dark:text-light sm:mx-6'>
+          <div className='text-dark text-xl text-justify mx-40 dark:text-light sm:mx-6 xs:mx-0 xs:text-base'>
             <li>
               Black holes: My research has focused on the formation and behavior
               of black holes, as well as their role in shaping galaxies.
@@ -77,9 +77,9 @@ function Home() {
         <Layout>
           <AnimatedText
             text='Current Research Focus'
-            className='xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center mb-8'
+            className='xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center mb-8 xs:!text-xl'
           />
-          <div className='text-dark text-xl text-justify mx-40 dark:text-light sm:mx-6'>
+          <div className='text-dark text-xl text-justify mx-40 dark:text-light sm:mx-6 xs:mx-0 xs:text-base'>
             <li>
               Supermassive black holes: I am currently conducting research on
               the behavior of supermassive black holes, particularly their role

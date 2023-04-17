@@ -5,7 +5,7 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import TransitionEffect from '@/components/TransitionEffect'
 import { LinkIcon } from '@/components/Icons'
-import { PublicationsData } from './data'
+import { PublicationsData } from '../../public/data'
 
 const Publication = ({ title, summary, link }) => {
   return (
@@ -50,11 +50,11 @@ const publications = () => {
         <meta name='description' content='description' />
       </Head>
       <TransitionEffect />
-      <main className='w-full mb-8 flex flex-col items-center justify-center dark:text-light'>
+      <main className='w-full mb-8 flex flex-col items-center justify-center dark:text-light '>
         <Layout className='pt-16'>
           <AnimatedText
             text='Publications And Scholarly Contribution'
-            className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-4xl text-center'
+            className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center '
           />
           <div className='grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
             {PublicationsData.map((publication) => (

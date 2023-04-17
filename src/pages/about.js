@@ -17,7 +17,7 @@ const about = () => {
       </Head>
       <TransitionEffect />
 
-      <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
+      <main className='flex items-center text-dark w-full min-h-screen dark:text-light xs:-mx-2'>
         <Layout className='pt-0 md:p-16 sm:pt-2'>
           <div className='flex items-center justify-between w-full lg:flex-col'>
             <div className='w-1/2 lg:w-full md:w-full md:-mt-8'>
@@ -25,7 +25,7 @@ const about = () => {
                 className='w-[420px] h-[490px] bg-primaryDark dark:bg-primary border-[12px] border-dark transition-[border-radius] duration-[0.5s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] rounded-[10px] 
               shadow-[inset_0_-3em_3em_rgba(0,0,0,0.1),0_0_0_2px_rgb(190,190,190),0.3em_0.3em_1em_rgba(0,0,0,0.3)]
               dark:shadow-[inset_0_-3em_3em_rgba(255,255,255,0.1),0_0_0_2px_rgb(53,53,53),0.3em_0.3em_1em_rgba(255,255,255,0.3)]
-              mt-24 md:w-[20rem] md:h-[341px] md:mt-16 md:ml-[72px] sm:ml-20 xs:ml-8 lg:ml-[160px] sm:mt-32 mb-4 dark:border-light xs:w-[14rem] xs:h-[14rem] sm:w-[300px] sm:h-[348px]'
+              mt-24 md:w-[20rem] md:h-[341px] md:mt-16 md:ml-[72px] sm:ml-20 xs:ml-8 lg:ml-[160px] sm:mt-32 mb-4 dark:border-light xs:w-[14rem] xs:h-[16rem] sm:w-[300px] sm:h-[348px]'
               >
                 <Image
                   src={profilePic}
@@ -34,10 +34,10 @@ const about = () => {
                   height={400}
                   priority={true}
                   sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
-                  className=' lg:inline-block md:inline-block md:w-[24rem] sm:w-[18rem] xs:w-[14rem] xs:-mt-[100px] '
+                  className=' lg:inline-block md:inline-block md:w-[24rem] sm:w-[18rem] xs:w-[14rem] xs:-mt-[3px] '
                 />
               </div>
-              <div className='flex items-center self-start mt-8 lg:self-center ml-20 '>
+              <div className='flex items-center self-start mt-8 lg:self-center ml-20 xs:flex-col xs:ml-4 xs:gap-2'>
                 <Link
                   href='/Resume.pdf'
                   target={'_blank'}
@@ -51,7 +51,7 @@ const about = () => {
                 <Link
                   href='https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=adhikareekshitij@gmail.com&subject=Unable%20to%20reach%20you&body=Hello%2C%0A%0AI%20tried%20contacting%20you%20today%20but%20you%20seem%20to%20have%20missed%20my%20call.%20%0A%0APlease%20return%20my%20call%20as%20soon%20as%20you%E2%80%99re%20available.%20%0A%0AIn%20any%20case%2C%20I%20will%20try%20ringing%20you%20at%20a%20later%20time.%0A%0A%0ATy%2C%0A%0A%0A%0A'
                   target={'_blank'}
-                  className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base'
+                  className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base xs:ml-0'
                 >
                   Contact
                 </Link>
@@ -101,7 +101,7 @@ const about = () => {
             text='Education And Training'
             className='xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center mb-8'
           />
-          <div className='text-dark text-xl text-justify mx-40 dark:text-light sm:mx-2 sm:text-base'>
+          <div className='text-dark text-xl text-justify mx-40 dark:text-light sm:mx-2 sm:text-base xs:-mx-2'>
             <li>
               My journey as an astrophysicist began with a deep passion for
               science and a strong curiosity about the universe. After
@@ -114,7 +114,7 @@ const about = () => {
             <li className='mt-6'>
               Following the completion of my PhD, I went on to pursue
               postdoctoral research at several prominent institutions, including
-              NASA's Goddard Space Flight Center and the Max Planck Institute
+              NASA&apos;s Goddard Space Flight Center and the Max Planck Institute
               for Astrophysics. These experiences allowed me to deepen my
               expertise in a variety of areas, from the study of gravitational
               waves to the behavior of black holes and the structure of
@@ -138,14 +138,14 @@ const about = () => {
             text='Research and Achievements'
             className='xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center mb-8'
           />
-          <div className='text-dark text-xl text-justify mx-40 dark:text-light sm:mx-4 sm:text-base'>
+          <div className='text-dark text-xl text-justify mx-40 dark:text-light sm:mx-4 sm:text-base xs:-mx-2'>
             <li>
               Over the course of my career as an astrophysicist, I have had the
               privilege of contributing to numerous groundbreaking research
               projects. One of my most significant achievements was my work on a
               team that detected gravitational waves for the first time. This
               discovery was a major milestone in the field of astrophysics,
-              confirming a key prediction of Einstein's theory of general
+              confirming a key prediction of Einstein&apos;s theory of general
               relativity and opening up new avenues for exploring the universe.
             </li>
             <li className='mt-6'>
