@@ -70,7 +70,7 @@ function Contact() {
                 <h1 className='text-2xl text-center font-bold'>
                   Connect With Me On Social Media
                 </h1>
-                <div className='flex flex-row ml-56 mt-6 sm:ml-2 sm:justify-center md:justify-start md:ml-32 lg:ml-48 sm:mb-4 xl:ml-8 2xl:ml-32 '>
+                <div className='flex flex-row ml-56 mt-6 sm:ml-2 sm:justify-center md:justify-start md:ml-32 lg:ml-48 sm:mb-4 xl:ml-8 2xl:ml-32 3xl:ml-32 '>
                   <Link href='/'>
                     <LinkedInIcon className='!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mr-4 2xl:w-[40px]' />
                   </Link>
