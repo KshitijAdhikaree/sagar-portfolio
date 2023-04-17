@@ -1,17 +1,8 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
-import Image from 'next/image'
-import { GithubIcon } from '@/components/Icons'
-import chatGpt from '../../public/images/projects/chatGpt.jpg'
-import musicPlayer from '../../public/images/projects/musicPlayer.jpg'
-import quoteGenerator from '../../public/images/projects/quoteGenerator.jpg'
-import justKidding from '../../public/images/projects/justKidding.jpg'
-import eShop from '../../public/images/projects/eShop.jpg'
-import picToPic from '../../public/images/projects/picToPic.jpg'
-import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 import {
   TwitterIcon,
@@ -19,7 +10,7 @@ import {
   FacebookIcon,
   LinkedInIcon,
 } from '@/components/Icons'
-import { useState } from 'react'
+
 
 function contact() {
   const [name, setName] = useState('')
