@@ -62,7 +62,7 @@ function Contact() {
                 />
               </div>
               <div className='text-xl mt-6 text-center font-semibold sm:text-base'>
-                <h1 className='mb-4'>Email : adhikarisagar@gmail.com</h1>
+                <h1 className='mb-4'>Email : adhikaree.sagar@gmail.com</h1>
                 <h1 className='mb-4'>Phone : (+1) 9845362846</h1>
                 <h1 className='mb-8'>Address : South Carolina, USA</h1>
               </div>
@@ -70,7 +70,7 @@ function Contact() {
                 <h1 className='text-2xl text-center font-bold'>
                   Connect With Me On Social Media
                 </h1>
-                <div className='flex flex-row ml-56 mt-6 sm:ml-2 sm:justify-center md:justify-start md:ml-32 lg:ml-48 sm:mb-4 xl:ml-8 '>
+                <div className='flex flex-row ml-56 mt-6 sm:ml-2 sm:justify-center md:justify-start md:ml-32 lg:ml-48 sm:mb-4 xl:ml-8 2xl:ml-32 '>
                   <Link href='/'>
                     <LinkedInIcon className='!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mr-4 2xl:w-[40px]' />
                   </Link>
@@ -92,13 +92,16 @@ function Contact() {
                 text='Contact Form'
                 className='xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center '
               />
-              <form onSubmit={handleSubmit} className='space-y-4 mt-8'>
+              <form
+                onSubmit={handleSubmit}
+                className='space-y-4 mt-8 w-[500px] xs:w-[360px]'
+              >
                 <div>
-                  <label className='block  font-bold mb-2 ' htmlFor='name'>
+                  <label className='block font-bold mb-2 ' htmlFor='name'>
                     Name
                   </label>
                   <input
-                    className='w-full px-40 py-2 border border-gray-400 rounded-md focus:outline-none'
+                    className='w-full px-3 py-2 border border-light dark:border-dark rounded-md focus:outline-none text-dark'
                     type='text'
                     name='name'
                     id='name'
@@ -112,7 +115,7 @@ function Contact() {
                     Email
                   </label>
                   <input
-                    className='w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-primary'
+                    className='w-full px-3 py-2 border border-light dark:border-dark rounded-md focus:outline-none text-dark'
                     type='email'
                     name='email'
                     id='email'
@@ -122,11 +125,11 @@ function Contact() {
                   />
                 </div>
                 <div>
-                  <label className='block  font-bold mb-2' htmlFor='message'>
+                  <label className='block font-bold mb-2' htmlFor='message'>
                     Message
                   </label>
                   <textarea
-                    className='w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-primary'
+                    className='w-full px-3 py-2 border border-light dark:border-dark rounded-md focus:outline-none text-dark'
                     name='message'
                     id='message'
                     rows='5'
