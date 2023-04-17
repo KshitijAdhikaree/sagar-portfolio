@@ -70,18 +70,18 @@ function Contact() {
                 <h1 className='text-2xl text-center font-bold'>
                   Connect With Me On Social Media
                 </h1>
-                <div className='flex flex-row ml-32 mt-6 sm:ml-2 sm:justify-center md:justify-start md:ml-32 lg:ml-48 sm:mb-4'>
+                <div className='flex flex-row ml-56 mt-6 sm:ml-2 sm:justify-center md:justify-start md:ml-32 lg:ml-48 sm:mb-4 xl:ml-8 '>
                   <Link href='/'>
-                    <LinkedInIcon className='w-[80px] xs:w-[35px] md:w-[60px] lg:w-[80px] mr-4 2xl:w-[40px]' />
+                    <LinkedInIcon className='!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mr-4 2xl:w-[40px]' />
                   </Link>
                   <Link href='/'>
-                    <TwitterIcon className='w-[80px] xs:w-[35px] md:w-[60px] lg:w-[80px] mx-4 2xl:w-[40px]' />
+                    <TwitterIcon className='!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mx-4 2xl:w-[40px]' />
                   </Link>
                   <Link href='/'>
-                    <InstagramIcon className='w-[100px] xs:w-[45px] md:w-[80px] lg:w-[80px] mx-4 -mt-6 md:-mt-5 2xl:w-[50px] xs:-mt-3 2xl:-mt-3' />
+                    <InstagramIcon className='!w-[5rem] xs:!w-[45px] md:w-[80px] lg:!w-[80px] mx-4 -mt-6 md:-mt-5 2xl:w-[50px] xs:-mt-3 2xl:-mt-3 xl:-mt-5' />
                   </Link>
                   <Link href='/'>
-                    <FacebookIcon className='w-[80px] xs:w-[35px] md:w-[60px] lg:w-[80px] ml-4 2xl:w-[40px]' />
+                    <FacebookIcon className='!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] ml-4 2xl:w-[40px]' />
                   </Link>
                 </div>
               </div>
