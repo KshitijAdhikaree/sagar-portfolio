@@ -5,8 +5,12 @@ import { LogoIcon } from "./Icons";
 const Logo = () => {
   return (
     <div>
-      <Link href="/">
-        <LogoIcon className="h-14 w-16 fill-dark hover:fill-dark items-center dark:fill-light hover:scale-110" />
+      <Link
+        href="/"
+        className="w-16 h-16   flex items-center justify-center border-hidden
+         hover:border-dark  hover:text-dark"
+      >
+        <LogoIcon className=" fill-dark hover:fill-dark  dark:fill-light hover:scale-110 " />
       </Link>
     </div>
   );
