@@ -98,14 +98,14 @@ function Contact() {
               />
               <form
                 onSubmit={handleSubmit}
-                className='space-y-4 mt-8 w-[500px] xs:w-[360px]'
+                className='space-y-4 mt-8 w-[500px] xs:w-[360px] '
               >
                 <div>
                   <label className='block font-bold mb-2 ' htmlFor='name'>
                     Name
                   </label>
                   <input
-                    className='w-full px-3 py-2 border border-light dark:border-dark rounded-md focus:outline-none text-dark'
+                    className='w-full px-3 py-2 border border-dark dark:border-light rounded-md focus:outline-none text-dark'
                     type='text'
                     name='name'
                     id='name'
@@ -119,7 +119,7 @@ function Contact() {
                     Email
                   </label>
                   <input
-                    className='w-full px-3 py-2 border border-light dark:border-dark rounded-md focus:outline-none text-dark'
+                    className='w-full px-3 py-2 border border-dark dark:border-light rounded-md focus:outline-none text-dark'
                     type='email'
                     name='email'
                     id='email'
@@ -133,7 +133,7 @@ function Contact() {
                     Message
                   </label>
                   <textarea
-                    className='w-full px-3 py-2 border border-light dark:border-dark rounded-md focus:outline-none text-dark'
+                    className='w-full px-3 py-2 border border-dark dark:border-light rounded-md focus:outline-none text-dark'
                     name='message'
                     id='message'
                     rows='5'
