@@ -90,7 +90,7 @@ const about = () => {
           />
           <div className='text-dark text-xl text-justify mx-40 dark:text-light sm:mx-2 sm:text-base xs:-mx-2'>
             <li className='mt-6'>
-              I graduated from the Tribhuvan University, Kathmandu, Nepal with a Masters' degree in Astrophysics in 2018.
+              I graduated from the Tribhuvan University, Kathmandu, Nepal with a Master`&apos;`s degree in Astrophysics in 2018.
               Since the fall of 2019, I have been working towards my PhD in high-energy observational astrophysics.
             </li>
             <li className='mt-6'>
