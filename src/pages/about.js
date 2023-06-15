@@ -65,12 +65,8 @@ const about = () => {
               />
               <p className='my-4 text-base font-medium md:text-sm sm:text-base text-justify xs:text-base '>
                 As an astrophysicist, I am deeply fascinated by the mysteries of
-                the universe. From the tiniest subatomic particles to the
-                largest structures in the cosmos, I am constantly driven to
-                learn more about how the universe works. My passion for
-                astrophysics has led me on a lifelong journey of discovery, as I
-                seek to uncover the secrets of black holes, dark matter, and the
-                origins of the universe itself.
+                the universe. I am driven to understand the emission mechanism of
+                accreting supermassive blackhole system at the center of active galaxies.
               </p>
               <p className='my-4 text-base font-medium md:text-sm sm:text-base text-justify xs:text-base '>
                 One of the most exciting aspects of my work as an astrophysicist
@@ -78,18 +74,9 @@ const about = () => {
                 around the world. Through these collaborations, I have been able
                 to contribute to groundbreaking research that has advanced our
                 understanding of the cosmos. From analyzing data from telescopes
-                and other instruments to developing complex mathematical models,
+                to developing complex mathematical models,
                 I am constantly working with others to push the boundaries of
                 our knowledge.
-              </p>
-              <p className='my-4 text-base font-medium md:text-sm sm:text-base text-justify xs:text-base '>
-                Of course, being an astrophysicist also comes with its share of
-                challenges. The universe is an incredibly complex and often
-                unforgiving place, and there is still so much we do not
-                understand. But I am driven by the belief that through hard
-                work, perseverance, and a dedication to the scientific method,
-                we can continue to unlock the secrets of the cosmos and deepen
-                our understanding of our place in the universe.
               </p>
             </div>
           </div>
@@ -98,76 +85,16 @@ const about = () => {
       <main>
         <Layout>
           <AnimatedText
-            text='Education And Training'
+            text='Education And Achievements'
             className='xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center mb-8'
           />
           <div className='text-dark text-xl text-justify mx-40 dark:text-light sm:mx-2 sm:text-base xs:-mx-2'>
-            <li>
-              My journey as an astrophysicist began with a deep passion for
-              science and a strong curiosity about the universe. After
-              completing my undergraduate degree in physics, I went on to earn a
-              PhD in astrophysics from a leading research university. During my
-              graduate studies, I had the opportunity to work with some of the
-              top scientists in the field and to contribute to research projects
-              that were advancing our understanding of the cosmos.
+            <li className='mt-6'>
+              I graduated from the Tribhuvan University, Kathmandu, Nepal with a Masters' degree in Astrophysics in 2018.
+              Since the fall of 2019, I have been working towards my PhD in high-energy observational astrophysics.
             </li>
             <li className='mt-6'>
-              Following the completion of my PhD, I went on to pursue
-              postdoctoral research at several prominent institutions, including
-              NASA&apos;s Goddard Space Flight Center and the Max Planck
-              Institute for Astrophysics. These experiences allowed me to deepen
-              my expertise in a variety of areas, from the study of
-              gravitational waves to the behavior of black holes and the
-              structure of galaxies.
-            </li>
-            <li className='mt-6'>
-              Throughout my education and training as an astrophysicist, I have
-              been committed to pursuing excellence in my research and to
-              sharing my knowledge with others. From mentoring undergraduate and
-              graduate students to presenting my work at conferences and in
-              scientific journals, I have always sought to contribute to the
-              broader scientific community and to inspire others to join in the
-              quest for knowledge.
-            </li>
-          </div>
-        </Layout>
-      </main>
-      <main>
-        <Layout>
-          <AnimatedText
-            text='Research and Achievements'
-            className='xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center mb-8'
-          />
-          <div className='text-dark text-xl text-justify mx-40 dark:text-light sm:mx-4 sm:text-base xs:-mx-2'>
-            <li>
-              Over the course of my career as an astrophysicist, I have had the
-              privilege of contributing to numerous groundbreaking research
-              projects. One of my most significant achievements was my work on a
-              team that detected gravitational waves for the first time. This
-              discovery was a major milestone in the field of astrophysics,
-              confirming a key prediction of Einstein&apos;s theory of general
-              relativity and opening up new avenues for exploring the universe.
-            </li>
-            <li className='mt-6'>
-              I have also contributed to research on the nature of black holes
-              and the role they play in the formation of galaxies. Through
-              extensive observations and simulations, my team and I have gained
-              new insights into the complex interactions between black holes,
-              dark matter, and other cosmic structures. Our findings have helped
-              to shed light on some of the most fundamental questions in
-              astrophysics, including the origins of the universe itself.
-            </li>
-            <li className='mt-6'>
-              In addition to my research, I have also been fortunate enough to
-              receive numerous accolades and awards for my work in the field of
-              astrophysics. These include the prestigious Nobel Prize in
-              Physics, which I received for my contributions to the detection of
-              gravitational waves. I am also a fellow of the American Physical
-              Society and a member of the National Academy of Sciences, among
-              other honors. Through all of these achievements, I am committed to
-              continuing to push the boundaries of our understanding of the
-              universe and to inspiring the next generation of astrophysicists
-              to join in the quest for knowledge.
+              I have also been teaching physics and mathematics to highschool and undergraduate students since 2014.  
             </li>
           </div>
         </Layout>

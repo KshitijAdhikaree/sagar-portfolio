@@ -27,11 +27,11 @@ function Home() {
               className="xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl"
             />
             <AnimatedText
-              text="Study celestial bodies and the universe."
+              text="Graduate student at Clemson University, Clemson, SC, USA"
               className="!text-3xl xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl"
             />
             <AnimatedText
-              text="Research dark matter, black holes, and more."
+              text="Research black holes, AGNs using multiwavelength observations"
               className="!text-3xl xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl"
             />
             <ScrollDown />
@@ -46,29 +46,12 @@ function Home() {
           />
           <div className="text-dark text-xl text-justify mx-40 dark:text-light sm:mx-6 xs:mx-0 xs:text-base">
             <li>
-              Black holes: My research has focused on the formation and behavior
-              of black holes, as well as their role in shaping galaxies.
+              Black holes: My research is focused on the Supermassive blackholes in the center of galaxies.
             </li>
             <li className="mt-6">
-              Dark matter: I have a deep interest in the study of dark matter,
-              which makes up the majority of the matter in the universe but
-              remains largely mysterious.
-            </li>
-            <li className="mt-6">
-              Gravitational waves: I have contributed to the study of
-              gravitational waves, which provide a new way of exploring the
-              universe and have opened up new avenues for research in
-              astrophysics.
-            </li>
-            <li className="mt-6">
-              Observational tools: I have expertise in the use of cutting-edge
-              observational tools, such as telescopes and other instruments, to
-              collect data on the universe.
-            </li>
-            <li className="mt-6">
-              Computational tools: I am also skilled in the use of computational
+              Computational tools: I am skilled in the use of computational
               tools and mathematical models to analyze data and develop theories
-              that help to deepen our understanding of the cosmos.
+              that help to deepen our understanding of the AGNs.
             </li>
           </div>
         </Layout>
@@ -81,31 +64,15 @@ function Home() {
           />
           <div className="text-dark text-xl text-justify mx-40 dark:text-light sm:mx-6 xs:mx-0 xs:text-base">
             <li>
-              Supermassive black holes: I am currently conducting research on
-              the behavior of supermassive black holes, particularly their role
-              in shaping the galaxies they reside in.
+              AGNs: I am currently conducting research on
+              the long-term variability on the multiwavelength Blazar emission
+              to constrain the binary SMBH models.
             </li>
             <li className="mt-6">
-              Gravitational waves: I am continuing my work on the study of
-              gravitational waves, particularly in the context of the detection
-              and interpretation of these waves from sources across the
-              universe.
-            </li>
-            <li className="mt-6">
-              Dark matter: I am also currently focused on understanding the
-              nature of dark matter and its impact on the formation and
-              evolution of galaxies.
-            </li>
-            <li className="mt-6">
-              Cosmology: My research also involves the study of the large-scale
-              structure of the universe, including the distribution of matter
-              and the evolution of cosmic structures.
-            </li>
-            <li className="mt-6">
-              Interdisciplinary approaches: Finally, I am interested in
-              exploring interdisciplinary approaches to astrophysics, including
-              the intersection of astrophysics with fields such as computer
-              science, machine learning, and artificial intelligence.
+              Impact of gaps in the periodicity analysis: I am interested in
+              exploring the impact of gaps in a light curve in the periodicity analysis.
+              Specifically, I am studying the detection of false periods in a random
+              timeseries data when various amount of gaps are introduced randomly.
             </li>
           </div>
         </Layout>

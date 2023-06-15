@@ -5,10 +5,11 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import TransitionEffect from '@/components/TransitionEffect'
 import {
-  TwitterIcon,
+  OrcidIcon,
   InstagramIcon,
   FacebookIcon,
   LinkedInIcon,
+  GithubIcon
 } from '@/components/Icons'
 
 function Contact() {
@@ -62,26 +63,29 @@ function Contact() {
                 />
               </div>
               <div className='text-xl mt-6 text-center font-semibold sm:text-base'>
-                <h1 className='mb-4'>Email : adhikaree.sagar@gmail.com</h1>
-                <h1 className='mb-4'>Phone : (+1) 9845362846</h1>
-                <h1 className='mb-8'>Address : South Carolina, USA</h1>
+                <h1 className='mb-4'>Email : sagara@g.clemson.edu</h1>
+                {/* <h1 className='mb-4'>Phone : (+1) (864) ___-____</h1> */}
+                <h1 className='mb-8'>Address : Clemson, SC, USA</h1>
               </div>
               <div className=''>
                 <h1 className='text-2xl text-center font-bold'>
                   Connect With Me On Social Media
                 </h1>
-                <div className='flex flex-row ml-56 mt-6 sm:ml-2 sm:justify-center md:justify-start md:ml-32 lg:ml-48 sm:mb-4 xl:ml-8 2xl:ml-32 3xl:ml-32 '>
-                  <Link href='/'>
+                <div className='flex flex-row ml-56 mt-6 sm:ml-2 sm:justify-center md:justify-center md:ml-2 lg:ml-24 sm:mb-4 xl:-ml-8 2xl:ml-12 3xl:ml-24 '>
+                  <Link href='https://www.linkedin.com/in/sagar-adhikari-a07350175/'>
                     <LinkedInIcon className='!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mr-4 2xl:w-[40px]' />
                   </Link>
-                  <Link href='/'>
-                    <TwitterIcon className='!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mx-4 2xl:w-[40px]' />
+                  <Link href='https://orcid.org/0009-0006-1029-1026'>
+                    <OrcidIcon className='!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mx-4 2xl:w-[40px]' />
                   </Link>
-                  <Link href='/'>
+                  <Link href='https://www.instagram.com/sagar_dex/'>
                     <InstagramIcon className='!w-[5rem] xs:!w-[45px] md:w-[80px] lg:!w-[80px] mx-4 -mt-6 md:-mt-5 2xl:w-[50px] xs:-mt-3 2xl:-mt-3 xl:-mt-5' />
                   </Link>
-                  <Link href='/'>
-                    <FacebookIcon className='!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] ml-4 2xl:w-[40px]' />
+                  <Link href='https://www.facebook.com/Dexteradhikari'>
+                    <FacebookIcon className='!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mx-4 2xl:w-[40px]' />
+                  </Link>
+                  <Link href='https://github.com/sagara92'>
+                    <GithubIcon className='!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] ml-4 2xl:w-[40px]' />
                   </Link>
                 </div>
               </div>
