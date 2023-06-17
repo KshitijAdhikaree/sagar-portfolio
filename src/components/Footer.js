@@ -11,7 +11,7 @@ const Footer = () => {
 
         <Link
           href='https://kshitijadhikaree.com.np'
-          className='underline underline-offset-2 lg:py-3 mt-2'
+          className='underline underline-offset-2 lg:py-3 mt-2 text-sm'
           target={'_blank'}
         >
           Kshitij Adhikaree
