@@ -6,8 +6,9 @@ import Link from 'next/link'
 import TransitionEffect from '@/components/TransitionEffect'
 import { LinkIcon } from '@/components/Icons'
 import { PublicationsData } from '../../public/data'
+import Popup from '@/components/Popup'
 
-const Publication = ({ title, summary, link }) => {
+const Research = ({ title, summary, link }) => {
   return (
     <article
       className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-10 relative rounded-br-2xl
@@ -27,39 +28,58 @@ const Publication = ({ title, summary, link }) => {
           {summary}
         </p>
         <div className='mt-2 flex flex-row items-center'>
-          <Link
-            href={link}
-            target='_blank'
+          <div
+             //href={link}
+            // target='_blank'
             className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark
-    sm:px-4 sm:text-base flex items-center'
-          >
-            <LinkIcon className='fill-light mr-2 dark:fill-dark' />
-            <span>Link</span>
-          </Link>
+                       sm:px-4 sm:text-base flex items-center'
+          ><Popup/>
+            {/* <LinkIcon className='fill-light mr-2 dark:fill-dark' /> */}
+            {/* <span>Link</span> */}
+          </div>
+
         </div>
       </div>
+      
     </article>
   )
 }
 
-const publications = () => {
+const research = () => {
   return (
     <>
       <Head>
-        <title>Sagar | Publications</title>
+        <title>Sagar | Research</title>
         <meta name='description' content='description' />
       </Head>
       <TransitionEffect />
       <main className='w-full mb-8 flex flex-col items-center justify-center dark:text-light '>
         <Layout className='pt-16'>
           <AnimatedText
-            text='Publications And Scholarly Contribution'
+            text='Projects'
+            className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center'
+          />
+          <div className='grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
+            {PublicationsData.map((publication) => (
+              <div key={publication.id} className='col-span-12'>
+                <Research
+                  title={publication.title}
+                  summary={publication.description}
+                  link={publication.link} 
+                />
+              </div>
+            ))}
+          </div>
+        </Layout>
+        <Layout className='pt-16'>
+          <AnimatedText
+            text='Publications'
             className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center '
           />
           <div className='grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
             {PublicationsData.map((publication) => (
               <div key={publication.id} className='col-span-12'>
-                <Publication
+                <Research
                   title={publication.title}
                   summary={publication.description}
                   link={publication.link}
@@ -73,4 +93,4 @@ const publications = () => {
   )
 }
 
-export default publications
+export default research
