@@ -1,9 +1,9 @@
 export const PublicationsData = [
     {
       id: 1,
-      title: 'Long-term periodicity study in 4FGL Blazars',
-      description:
-        'This work explores the possible long-term periodicity in the 4FGL blazars.',
+      title: 'Enhancing Periodicity Analysis Accuracy through Phase Fold Amplitude Minimization (PFAM) Technique',
+      description:'',
+         
       link: 'https://example.com/publication1',
     }
   ]

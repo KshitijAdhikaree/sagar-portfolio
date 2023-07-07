@@ -83,9 +83,9 @@ const research = () => {
             {PublicationsData.map((publication) => (
               <div key={publication.id} className='col-span-12'>
                 <Research
-                  title={publication.title}
-                  summary={publication.description}
-                  link={publication.link}
+                  title='Title'
+                  summary='Description'
+                  link=''
                 />
               </div>
             ))}
