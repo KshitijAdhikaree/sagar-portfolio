@@ -7,6 +7,8 @@ import TransitionEffect from '@/components/TransitionEffect'
 import { LinkIcon } from '@/components/Icons'
 import { PublicationsData } from '../../public/data'
 import Popup from '@/components/Popup'
+//import ScrollDialog from '@/components/ScrollDialog'
+//import DialogBox from '@/components/DialogBox'
 
 const Research = ({ title, summary, link }) => {
   return (
@@ -29,13 +31,14 @@ const Research = ({ title, summary, link }) => {
         </p>
         <div className='mt-2 flex flex-row items-center'>
           <div
-             //href={link}
+            // href={link}
             // target='_blank'
             className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark
                        sm:px-4 sm:text-base flex items-center'
-          ><Popup/>
-            {/* <LinkIcon className='fill-light mr-2 dark:fill-dark' /> */}
-            {/* <span>Link</span> */}
+          >
+            {/* <LinkIcon className='fill-light mr-2 dark:fill-dark' /> 
+            <span>Link</span> */}
+<Popup/>
           </div>
 
         </div>

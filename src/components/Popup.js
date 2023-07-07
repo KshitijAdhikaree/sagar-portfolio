@@ -1,12 +1,15 @@
+import Image from 'next/image'
 import React, { useState } from 'react'
 import Modal from 'react-modal'
-import {GrView} from 'react-icons/gr'
-import BackgroundImage from '../../public/images/backgroundHome.jpg'
-import Vercel from '../../public/vercel.svg'
+//var VsCode = require ("../../public/vscode.html")
+import Photo1 from'../../public/Project_1_Page_1.jpg'
+import Photo2 from'../../public/Project_1_Page_2.jpg'
 
 
 const Popup = () => {
+   
    const [isOpen, setIsOpen] = useState(false)
+   
    const customStyles = {
       overlay: {
          backgroundColor: 'rgba(0, 0, 0, 0.6)'
@@ -17,18 +20,40 @@ const Popup = () => {
          right: 'auto',
          bottom: 'auto',
          marginRight: '-50%',
-         transform: 'translate(-50%, -50%)'       
+         transform: 'translate(-50%, -50%)'
+         
       }
    }
    return (
       <div>
-         <button onClick={() => setIsOpen(true)}> <div className='flex flex-row items-center'>View &nbsp;<span><GrView/></span> </div></button>
-         <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={customStyles}>
+         <button onClick={() => setIsOpen(true)}> View </button>
+         <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={customStyles} >
            
-            <h1>Modal Content</h1>
-            <button onClick={() => setIsOpen(false)}>Close Modal</button>
+            <div className='dark:bg-dark dark:text-light -mx-5 -my-5 px-6 py-6 '>
+         <div className='h-[450px] w-[900px] overflow-y-auto'>
+        
+    <html>
+    <head>
+     <title>My Embedded Page</title>
+    </head>
+    <body>
+     <div>
+      <Image src={Photo1}/>
+      <Image src={Photo2}/>
+     </div>
+    </body>
+   </html> 
+   
+
+         </div>
+          <div className="flex justify-center mt-4">
+          <button onClick={() => setIsOpen(false)} className=' rounded-full bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark
+                       sm:px-4 sm:text-base flex items-center'>Close</button>
+          </div>       
+            </div>          
          </Modal>
       </div>
    )
 }
 export default Popup
+
