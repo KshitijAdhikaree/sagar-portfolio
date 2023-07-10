@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import Modal from 'react-modal'
-//var VsCode = require ("../../public/vscode.html")
 import Photo1 from'../../public/Project_1_Page_1.jpg'
 import Photo2 from'../../public/Project_1_Page_2.jpg'
+import Photo3 from'../../public/Project_1_Page_3.jpg'
+
 
 
 const Popup = () => {
@@ -34,12 +35,14 @@ const Popup = () => {
         
     <html>
     <head>
-     <title>My Embedded Page</title>
+     <title>Popup window</title>
     </head>
     <body>
      <div>
       <Image src={Photo1}/>
       <Image src={Photo2}/>
+      <Image src={Photo3}/>
+
      </div>
     </body>
    </html> 

@@ -31,14 +31,14 @@ const Research = ({ title, summary, link }) => {
         </p>
         <div className='mt-2 flex flex-row items-center'>
           <div
-            // href={link}
+             //href={link}
             // target='_blank'
             className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark
                        sm:px-4 sm:text-base flex items-center'
           >
             {/* <LinkIcon className='fill-light mr-2 dark:fill-dark' /> 
             <span>Link</span> */}
-<Popup/>
+             <Popup />
           </div>
 
         </div>
@@ -85,7 +85,7 @@ const research = () => {
                 <Research
                   title='Title'
                   summary='Description'
-                  link=''
+                  link='/'
                 />
               </div>
             ))}
