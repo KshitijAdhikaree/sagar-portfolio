@@ -4,8 +4,7 @@ export const PublicationData = [
     {
       id: 1,
       title: 'Title',
-      description:'Description',
-         
+      description:'Description',        
       link: '',
     }
   ]
