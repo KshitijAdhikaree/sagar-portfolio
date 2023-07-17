@@ -4,9 +4,9 @@ export const PublicationData = [
     {
       id: 1,
       title: 'Title',
-      description:'description',
+      description:'Description',
          
-      link: 'https://example.com/publication1',
+      link: '',
     }
   ]
   
