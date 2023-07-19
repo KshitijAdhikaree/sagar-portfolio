@@ -1,17 +1,17 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 const TransitionEffect = () => {
   return (
     <>
       <motion.div
-        className='fixed top-0 bottom-0 right-full w-screen z-30 bg-light dark:bg-dark'
-        initial={{ x: '100%', width: '100%', height: '100%' }}
-        animate={{ x: '0%', width: '0%', height: '100%' }}
-        exit={{ x: ['0%', '100%'], width: ['0%', '100%'], height: '100%' }}
-        transition={{ duration: 0.2, ease: 'easeInOut' }}
-      />      
+        className="fixed top-0 bottom-0 right-full w-screen z-30 bg-light dark:bg-dark"
+        initial={{ x: "100%", width: "100%", height: "100%" }}
+        animate={{ x: "0%", width: "0%", height: "100%" }}
+        exit={{ x: ["0%", "100%"], width: ["0%", "100%"], height: "100%" }}
+        transition={{ duration: 0.2, ease: "easeInOut" }}
+      />
     </>
-  )
-}
+  );
+};
 
-export default TransitionEffect
+export default TransitionEffect;

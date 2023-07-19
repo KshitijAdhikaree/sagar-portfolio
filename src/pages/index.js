@@ -46,7 +46,8 @@ function Home() {
           />
           <div className="text-dark text-xl text-justify mx-40 dark:text-light sm:mx-6 xs:mx-0 xs:text-base">
             <li>
-              Black holes: My research is focused on the Supermassive blackholes in the center of galaxies.
+              Black holes: My research is focused on the Supermassive blackholes
+              in the center of galaxies.
             </li>
             <li className="mt-6">
               Computational tools: I am skilled in the use of computational
@@ -64,15 +65,16 @@ function Home() {
           />
           <div className="text-dark text-xl text-justify mx-40 dark:text-light sm:mx-6 xs:mx-0 xs:text-base">
             <li>
-              AGNs: I am currently conducting research on
-              the long-term variability on the multiwavelength Blazar emission
-              to constrain the binary SMBH models.
+              AGNs: I am currently conducting research on the long-term
+              variability on the multiwavelength Blazar emission to constrain
+              the binary SMBH models.
             </li>
             <li className="mt-6">
               Impact of gaps in the periodicity analysis: I am interested in
-              exploring the impact of gaps in a light curve in the periodicity analysis.
-              Specifically, I am studying the detection of false periods in a random
-              timeseries data when various amount of gaps are introduced randomly.
+              exploring the impact of gaps in a light curve in the periodicity
+              analysis. Specifically, I am studying the detection of false
+              periods in a random timeseries data when various amount of gaps
+              are introduced randomly.
             </li>
           </div>
         </Layout>
