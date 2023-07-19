@@ -9,7 +9,6 @@ import { ProjectData } from "../../public/projectData";
 import { PublicationData } from "../../public/publicationData";
 //import project1 from "./project1";
 
-
 //import Popup from '@/components/Popup'
 //import ScrollDialog from '@/components/ScrollDialog'
 //import DialogBox from '@/components/DialogBox'
