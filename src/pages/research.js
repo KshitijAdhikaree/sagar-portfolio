@@ -4,14 +4,9 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
-//import { LinkIcon } from '@/components/Icons'
 import { ProjectData } from "../../public/projectData";
 import { PublicationData } from "../../public/publicationData";
-//import project1 from "./project1";
 
-//import Popup from '@/components/Popup'
-//import ScrollDialog from '@/components/ScrollDialog'
-//import DialogBox from '@/components/DialogBox'
 
 const Research = ({ title, summary, link }) => {
   return (
@@ -25,23 +20,20 @@ const Research = ({ title, summary, link }) => {
       />
 
       <div className="w-full flex flex-col items-center justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6 text-center">
-        <h2 className="my-2 w-full text-dark text-center text-4xl font-bold dark:text-light sm:text-sm ">
+        <h2 className="my-2 w-full text-dark text-center text-4xl font-bold dark:text-light sm:text-sm">
           {title}
         </h2>
 
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm ">
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm text-justify">
           {summary}
         </p>
         <div className="mt-2 flex flex-row items-center">
           <Link
             href={link}
-            //target="_blank"
             className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark
                     sm:px-4 sm:text-base flex items-center"
           >
-            {/* <LinkIcon className='fill-light mr-2 dark:fill-dark' />  */}
-            <span>View</span>
-            {/* <Popup /> */}
+            View
           </Link>
         </div>
       </div>
