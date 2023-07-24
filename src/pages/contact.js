@@ -63,8 +63,9 @@ function Contact() {
                 />
               </div>
               <div className="text-xl mt-6 text-center font-semibold sm:text-base">
-                <h1 className="mb-4">Email : sagara@g.clemson.edu</h1>
-                {/* <h1 className='mb-4'>Phone : (+1) (864) ___-____</h1> */}
+                <h1 className="mb-4">Email : sagara@clemson.edu, adhikaree.sagar@gmail.com</h1>
+                
+                
                 <h1 className="mb-8">Address : Clemson, SC, USA</h1>
               </div>
               <div className="">

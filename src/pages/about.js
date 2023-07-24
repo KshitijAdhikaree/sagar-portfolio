@@ -44,12 +44,11 @@ const about = () => {
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold 
                   hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark
                   dark:text-dark dark:bg-light dark:hover:border-light dark:hover:bg-dark dark:hover:text-light md:p-2 md:px-4 md:text-base"
-                  download={true}
                 >
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
-                  href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=adhikaree.sagar@gmail.com&subject=Unable%20to%20reach%20you&body=Hello%2C%0A%0AI%20tried%20contacting%20you%20today%20but%20you%20seem%20to%20have%20missed%20my%20call.%20%0A%0APlease%20return%20my%20call%20as%20soon%20as%20you%E2%80%99re%20available.%20%0A%0AIn%20any%20case%2C%20I%20will%20try%20ringing%20you%20at%20a%20later%20time.%0A%0A%0ATy%2C%0A%0A%0A%0A"
+                  href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=adhikaree.sagar@gmail.com"
                   target={"_blank"}
                   className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base xs:ml-0"
                 >
@@ -57,7 +56,6 @@ const about = () => {
                 </Link>
               </div>
             </div>
-
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center sm:mt-4">
               <AnimatedText
                 text="About Me"
