@@ -29,7 +29,7 @@ const Research = ({ title, summary, link }) => {
           {title}
         </h2>
 
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm  ">
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm ">
           {summary}
         </p>
         <div className="mt-2 flex flex-row items-center">
@@ -37,7 +37,7 @@ const Research = ({ title, summary, link }) => {
             href={link}
             //target="_blank"
             className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark
-                       sm:px-4 sm:text-base flex items-center"
+                    sm:px-4 sm:text-base flex items-center"
           >
             {/* <LinkIcon className='fill-light mr-2 dark:fill-dark' />  */}
             <span>View</span>
