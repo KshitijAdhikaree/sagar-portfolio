@@ -62,19 +62,19 @@ const about = () => {
                 className="xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-base text-justify xs:text-base ">
-                As an astrophysicist, I am deeply fascinated by the mysteries of
-                the universe. I am driven to understand the emission mechanism
-                of accreting supermassive blackhole system at the center of
-                active galaxies.
+                I find the mysteries of the universe to be incredibly
+                fascinating as an astrophysicist. My goal is to figure out how
+                the accreting supermassive blackhole system at the center of
+                active galaxies emits light.
               </p>
               <p className="my-4 text-base font-medium md:text-sm sm:text-base text-justify xs:text-base ">
-                One of the most exciting aspects of my work as an astrophysicist
-                is the opportunity to collaborate with other scientists from
-                around the world. Through these collaborations, I have been able
-                to contribute to groundbreaking research that has advanced our
-                understanding of the cosmos. From analyzing data from telescopes
-                to developing complex mathematical models, I am constantly
-                working with others to push the boundaries of our knowledge.
+                Working with scientists from all over the world is one of the
+                most intriguing aspects of my job as an astrophysicist. I've
+                been able to contribute to ground-breaking studies that have
+                expanded our knowledge of the universe through these
+                collaborations. From analyzing data from telescopes to
+                developing complex mathematical models, I am constantly working
+                with others to push the boundaries of our knowledge.
               </p>
             </div>
           </div>

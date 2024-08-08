@@ -6,9 +6,9 @@ import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 import { ProjectData } from "../../public/projectData";
 import { PublicationData } from "../../public/publicationData";
+import { PressAndTalkData } from "../../public/pressAndTalkData";
 
-
-const Research = ({ title, summary, link }) => {
+const Research = ({ title, summary, link, isPressAndTalk }) => {
   return (
     <article
       className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-10 relative rounded-br-2xl
@@ -20,28 +20,46 @@ const Research = ({ title, summary, link }) => {
       />
 
       <div className="w-full flex flex-col items-center justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6 text-center">
-        <h2 className="my-2 w-full text-dark text-center text-4xl font-bold dark:text-light sm:text-sm">
-          {title}
-        </h2>
+        {isPressAndTalk && link ? (
+          <Link href={link} className="my-2 w-full text-dark text-center text-2xl font-bold dark:text-light sm:text-sm hover:underline">
+            {title}
+          </Link>
+        ) : (
+          <h2 className="my-2 w-full text-dark text-center text-2xl font-bold dark:text-light sm:text-sm">
+            {title}
+          </h2>
+        )}
 
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm text-justify">
           {summary}
         </p>
-        <div className="mt-2 flex flex-row items-center">
-          <Link
-            href={link}
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark
-                    sm:px-4 sm:text-base flex items-center"
-          >
-            View
-          </Link>
-        </div>
+        {!isPressAndTalk && (
+          <div className="mt-2 flex flex-row items-center">
+            {link ? (
+              <Link
+                href={link}
+                className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark
+              sm:px-4 sm:text-base flex items-center"
+              >
+                View
+              </Link>
+            ) : (
+              <button
+                disabled
+                className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-gray-300 dark:text-dark
+                sm:px-4 sm:text-base flex items-center cursor-not-allowed"
+              >
+                View
+              </button>
+            )}
+          </div>
+        )}
       </div>
     </article>
   );
 };
 
-const research = () => {
+const ResearchPage = () => {
   return (
     <>
       <Head>
@@ -53,7 +71,7 @@ const research = () => {
         <Layout className="pt-16">
           <AnimatedText
             text="Projects"
-            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center"
+            className="mb-8 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             {ProjectData.map((project) => (
@@ -62,15 +80,16 @@ const research = () => {
                   title={project.title}
                   summary={project.description}
                   link={project.link}
+                  isPressAndTalk={false}
                 />
               </div>
             ))}
           </div>
         </Layout>
-        <Layout className="pt-16">
+        <Layout className="pt-0">
           <AnimatedText
             text="Publications"
-            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center "
+            className="mb-8 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center "
           />
           <div className="grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             {PublicationData.map((publication) => (
@@ -79,6 +98,25 @@ const research = () => {
                   title={publication.title}
                   summary={publication.description}
                   link={publication.link}
+                  isPressAndTalk={false}
+                />
+              </div>
+            ))}
+          </div>
+        </Layout>
+        <Layout className="pt-0">
+          <AnimatedText
+            text="Press And Talks"
+            className="mb-8 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center "
+          />
+          <div className="grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            {PressAndTalkData.map((pressAndTalk) => (
+              <div key={pressAndTalk.id} className="col-span-12">
+                <Research
+                  title={pressAndTalk.title}
+                  summary={pressAndTalk.description}
+                  link={pressAndTalk.link}
+                  isPressAndTalk={true}
                 />
               </div>
             ))}
@@ -89,4 +127,4 @@ const research = () => {
   );
 };
 
-export default research;
+export default ResearchPage;

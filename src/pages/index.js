@@ -27,7 +27,7 @@ function Home() {
               className="xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl"
             />
             <AnimatedText
-              text="Graduate student at Clemson University, Clemson, SC, USA"
+              text="PhD Candidate at Clemson University, Clemson, SC, USA"
               className="!text-3xl xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl"
             />
             <AnimatedText
