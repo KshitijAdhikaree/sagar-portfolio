@@ -69,11 +69,11 @@ const about = () => {
               </p>
               <p className="my-4 text-base font-medium md:text-sm sm:text-base text-justify xs:text-base ">
                 Working with scientists from all over the world is one of the
-                most intriguing aspects of my job as an astrophysicist. I've
+                most intriguing aspects of my job as an astrophysicist. I&apos;ve
                 been able to contribute to ground-breaking studies that have
                 expanded our knowledge of the universe through these
                 collaborations. From analyzing data from telescopes to
-                developing complex mathematical models, I am constantly working
+                developing complex mathematical models&#44; I am constantly working
                 with others to push the boundaries of our knowledge.
               </p>
             </div>
