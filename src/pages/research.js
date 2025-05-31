@@ -68,6 +68,43 @@ const ResearchPage = () => {
       </Head>
       <TransitionEffect />
       <main className="w-full mb-8 flex flex-col items-center justify-center dark:text-light ">
+        
+        <Layout className="pt-16">
+          <AnimatedText
+            text="Publications"
+            className="mb-8 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center "
+          />
+          <div className="grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            {PublicationData.map((publication) => (
+              <div key={publication.id} className="col-span-12">
+                <Research
+                  title={publication.title}
+                  summary={publication.description}
+                  link={publication.link}
+                  isPressAndTalk={false}
+                />
+              </div>
+            ))}
+          </div>
+        </Layout>
+        <Layout className="pt-16">
+          <AnimatedText
+            text="Press And Talks"
+            className="mb-8 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center "
+          />
+          <div className="grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            {PressAndTalkData.map((pressAndTalk) => (
+              <div key={pressAndTalk.id} className="col-span-12">
+                <Research
+                  title={pressAndTalk.title}
+                  summary={pressAndTalk.description}
+                  link={pressAndTalk.link}
+                  isPressAndTalk={true}
+                />
+              </div>
+            ))}
+          </div>
+        </Layout>
         <Layout className="pt-16">
           <AnimatedText
             text="Projects"
@@ -86,42 +123,7 @@ const ResearchPage = () => {
             ))}
           </div>
         </Layout>
-        <Layout className="pt-0">
-          <AnimatedText
-            text="Publications"
-            className="mb-8 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center "
-          />
-          <div className="grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            {PublicationData.map((publication) => (
-              <div key={publication.id} className="col-span-12">
-                <Research
-                  title={publication.title}
-                  summary={publication.description}
-                  link={publication.link}
-                  isPressAndTalk={false}
-                />
-              </div>
-            ))}
-          </div>
-        </Layout>
-        <Layout className="pt-0">
-          <AnimatedText
-            text="Press And Talks"
-            className="mb-8 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center "
-          />
-          <div className="grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            {PressAndTalkData.map((pressAndTalk) => (
-              <div key={pressAndTalk.id} className="col-span-12">
-                <Research
-                  title={pressAndTalk.title}
-                  summary={pressAndTalk.description}
-                  link={pressAndTalk.link}
-                  isPressAndTalk={true}
-                />
-              </div>
-            ))}
-          </div>
-        </Layout>
+        
       </main>
     </>
   );

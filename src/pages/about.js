@@ -69,12 +69,12 @@ const about = () => {
               </p>
               <p className="my-4 text-base font-medium md:text-sm sm:text-base text-justify xs:text-base ">
                 Working with scientists from all over the world is one of the
-                most intriguing aspects of my job as an astrophysicist. I&apos;ve
-                been able to contribute to ground-breaking studies that have
-                expanded our knowledge of the universe through these
+                most intriguing aspects of my job as an astrophysicist.
+                I&apos;ve been able to contribute to ground-breaking studies
+                that have expanded our knowledge of the universe through these
                 collaborations. From analyzing data from telescopes to
-                developing complex mathematical models&#44; I am constantly working
-                with others to push the boundaries of our knowledge.
+                developing complex mathematical models&#44; I am constantly
+                working with others to push the boundaries of our knowledge.
               </p>
             </div>
           </div>
@@ -88,14 +88,73 @@ const about = () => {
           />
           <div className="text-dark text-xl text-justify mx-40 dark:text-light sm:mx-2 sm:text-base xs:-mx-2">
             <li className="mt-6">
-              I graduated from the Tribhuvan University, Kathmandu, Nepal with a
-              Master&apos;s degree in Astrophysics in 2018. Since the fall of
-              2019, I have been working towards my PhD in high-energy
-              observational astrophysics.
+              <strong>
+                Finding binary supermassive black holes with historical optical
+                data; PG 1553+113 case study
+              </strong>
+              <br />
+              <em>
+                Meeting of Astronomers of South Carolina, Florence, SC, USA,
+                2025
+              </em>
             </li>
             <li className="mt-6">
-              I have also been teaching physics and mathematics to highschool
-              and undergraduate students since 2014.
+              <a
+                href="https://fermi.gsfc.nasa.gov/science/mtgs/symposia/eleventh/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                <strong>
+                  Decades long periodicity in 2FHL blazar PG 1553+113?
+                </strong>
+              </a>
+              <br />
+              <em>11th International Fermi Symposium, Maryland, USA, 2024</em>
+            </li>
+            <li className="mt-6">
+              <strong>
+                Analysis of Fermi-LAT blazar lightcurves in the time domain
+                using singular spectrum analysis
+              </strong>
+              <br />
+              <em>
+                International Conference on Time Series and Forecasting
+                (ITISE-2023), Gran Canaria, Spain, 2023
+              </em>
+            </li>
+            <li className="mt-6">
+              <a
+                href="https://ui.adsabs.harvard.edu/abs/2023HEAD...2006A06P/abstract"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                <strong>
+                  PG 1553+113: The case for a super-massive black hole binary
+                </strong>
+              </a>
+              <br />
+              <em>AAS/High Energy Astrophysics Division, Hawaii, USA, 2023</em>
+            </li>
+            <li className="mt-6">
+              <strong>Biography of the earliest photons</strong>
+              <br />
+              <em>
+                Southampton IUCAA Training for Astronomical Research and
+                Education (SITARE), Pune, India, 2019
+              </em>
+            </li>
+            <li className="mt-6">
+              <strong>
+                Searching for transients using INTEGRAL lightcurve
+              </strong>
+              <br />
+              <em>
+                Southampton IUCAA Training for Astronomical Research and
+                Education (SITARE Advanced), University of Southampton, United
+                Kingdom, 2019
+              </em>
             </li>
           </div>
         </Layout>

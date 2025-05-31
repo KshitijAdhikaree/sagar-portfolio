@@ -11,7 +11,7 @@ export const ProjectData = [
     id: 2,
     title:
       "Can Blazar flares in gamma-ray LCs be explained by jet angle and geometry?",
-    description: "Coming soon…",
+    description: "In Preparation.",
     link: "",
   },
 ];
