@@ -106,7 +106,7 @@ const about = () => {
                 className="hover:underline"
               >
                 <strong>
-                  Decades long periodicity in 2FHL blazar PG 1553+113?
+                  Decades long periodicity in 2fhl blazar PG 1553+113?
                 </strong>
               </a>
               <br />
@@ -114,7 +114,7 @@ const about = () => {
             </li>
             <li className="mt-6">
               <strong>
-                Analysis of Fermi-LAT blazar lightcurves in the time domain
+                Analysis of Fermi-lat blazar lightcurves in the time domain
                 using singular spectrum analysis
               </strong>
               <br />
@@ -147,7 +147,7 @@ const about = () => {
             </li>
             <li className="mt-6">
               <strong>
-                Searching for transients using INTEGRAL lightcurve
+                Searching for transients using integral lightcurve
               </strong>
               <br />
               <em>
