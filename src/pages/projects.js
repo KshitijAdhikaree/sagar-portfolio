@@ -5,10 +5,8 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 import { ProjectData } from "../../public/projectData";
-import { PublicationData } from "../../public/publicationData";
-import { PressAndTalkData } from "../../public/pressAndTalkData";
 
-const Research = ({ title, summary, link, isPressAndTalk }) => {
+const Projects = ({ title, summary, link, isPressAndTalk }) => {
   return (
     <article
       className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-10 relative rounded-br-2xl
@@ -59,11 +57,11 @@ const Research = ({ title, summary, link, isPressAndTalk }) => {
   );
 };
 
-const ResearchPage = () => {
+const ProjectsPage = () => {
   return (
     <>
       <Head>
-        <title>Sagar | Research</title>
+        <title>Sagar | Projects</title>
         <meta name="description" content="description" />
       </Head>
       <TransitionEffect />
@@ -71,43 +69,25 @@ const ResearchPage = () => {
         
         <Layout className="pt-16">
           <AnimatedText
-            text="Publications"
+            text="Projects"
             className="mb-8 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center "
           />
           <div className="grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            {PublicationData.map((publication) => (
-              <div key={publication.id} className="col-span-12">
-                <Research
-                  title={publication.title}
-                  summary={publication.description}
-                  link={publication.link}
+            {ProjectData.map((projects) => (
+              <div key={projects.id} className="col-span-12">
+                <Projects
+                  title={projects.title}
+                  summary={projects.description}
+                  link={projects.link}
                   isPressAndTalk={false}
                 />
               </div>
             ))}
           </div>
-        </Layout>
-        <Layout className="pt-16">
-          <AnimatedText
-            text="Press And Talks"
-            className="mb-8 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center "
-          />
-          <div className="grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            {PressAndTalkData.map((pressAndTalk) => (
-              <div key={pressAndTalk.id} className="col-span-12">
-                <Research
-                  title={pressAndTalk.title}
-                  summary={pressAndTalk.description}
-                  link={pressAndTalk.link}
-                  isPressAndTalk={true}
-                />
-              </div>
-            ))}
-          </div>
-        </Layout>
+        </Layout>        
       </main>
     </>
   );
 };
 
-export default ResearchPage;
+export default ProjectsPage;
