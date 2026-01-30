@@ -5,7 +5,7 @@ export const ProjectData = [
     "ML Classifications of Fermi-LAT Blazars",
     description:
     "The raw data from the Fermi-LAT telescope is analyzed for classification of BLL and FSRQ types of blazars. Three classifier ML algorithms were trained for it, Decision Tree (DT), XGBoost DT (GBDT), and Random Forest (RF). The GBDT classifier was found to be the most accurate with accuracy >90%.",
-    link: "/4FGL_Blazar_Classification_Project.ipynb",
+    link: "https://github.com/sagara92/Fermi_LAT_ML_project",
   },
   {
     id: 2,
