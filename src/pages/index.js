@@ -56,7 +56,7 @@ function Home() {
             </li>
             <li className="mt-6">
               Data Science & Machine Learning: I utilize modern ML algorithms, models to analyze multitude of data and develop/test theories
-              that help to deepen our understanding of the AGNs. Visit my "Projects" tab.
+              that help to deepen our understanding of the AGNs. Visit my &ldquo;Projects&rdquo; tab.
             </li>
           </div>
         </Layout>
