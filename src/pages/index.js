@@ -21,7 +21,7 @@ function Home() {
             alt="background"
             className="-mt-32 h-[104vh] sm:h-[120vh]"
           />
-          <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-6 xs:mt-2 xs:-ml-2">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-6 xs:mt-2 xs:-ml-2">
             <AnimatedText
               text="Sagar Adhikari, PhD"
               className="xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl"
