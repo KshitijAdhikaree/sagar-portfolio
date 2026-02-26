@@ -2,13 +2,20 @@ export const ProjectData = [
   {
     id: 1,
     title:
+    "My Research Assistant",
+    description:
+    "An end-to-end Retrieval-Augmented Generation (RAG) web app built to interactively answer questions related to my peer-reviewed publications. This project is an AI research assistant, which retrieves relevant responses from dense academic papers, researching Supermassive Black Holes, Active Galactic Nuclei (AGNs), Blazars, and QPO analysis of blazars.",
+    link: "https://github.com/sagara92/SAs_Research_Assistant",
+  },{
+    id: 2,
+    title:
     "Stock Market Forecasting",
     description:
     "S&P 500 represents the 500 most valuable companies of the US stock market. In this project, I utilize multiple statistical and machine learning models to forecast the market trend. See for yourself how different models stack up against eachother and how effective are they to forecast impending market crash.",
     link: "https://github.com/sagara92/SandP_Trends_Prediction",
   },
   {
-    id: 2,
+    id: 3,
     title:
     "ML Classifications of Fermi-LAT Blazars",
     description:
@@ -16,7 +23,7 @@ export const ProjectData = [
     link: "https://github.com/sagara92/Fermi_LAT_ML_project",
   },
   {
-    id: 3,
+    id: 4,
     title:
     "Image style transfer using TensorFlow",
     description:
@@ -24,7 +31,7 @@ export const ProjectData = [
     link: "https://github.com/sagara92/Image_style_transfer_ML",
   },
   {
-    id: 4,
+    id: 5,
     title:
       "Hangman ML Solver",
     description:
@@ -32,7 +39,7 @@ export const ProjectData = [
     link: "https://github.com/sagara92/Hangman_ML/blob/main/hangman_solver_ML_NGram.ipynb",
   },
   {
-    id: 5,
+    id: 6,
     title:
       "Enhancing Periodicity Analysis Accuracy Through Phase Fold Amplitude Minimization (PFAM) Technique",
     description:
@@ -40,10 +47,10 @@ export const ProjectData = [
     link: "/PFAM_technique.pdf",
   },
   {
-    id: 6,
+    id: 7,
     title:
       "Can Blazar flares in gamma-ray LCs be explained by jet angle and geometry?",
-    description: "In Preparation.",
+    description: "In Prep...",
     link: "",
   },
 ];
