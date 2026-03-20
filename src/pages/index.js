@@ -23,15 +23,15 @@ function Home() {
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-6 xs:mt-2 xs:-ml-2">
             <AnimatedText
-              text="Sagar Adhikari"
+              text="Sagar Adhikari, PhD"
               className="xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl"
             />
             <AnimatedText
-              text="Graduate student at Clemson University, Clemson, SC, USA"
+              text="Clemson University, Clemson, SC, USA"
               className="!text-3xl xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl"
             />
             <AnimatedText
-              text="Research black holes, AGNs using multiwavelength observations"
+              text="I research black holes, AGNs using multiwavelength observations, Statistical models, and Machine Learning."
               className="!text-3xl xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl"
             />
             <ScrollDown />
@@ -53,6 +53,10 @@ function Home() {
               Computational tools: I am skilled in the use of computational
               tools and mathematical models to analyze data and develop theories
               that help to deepen our understanding of the AGNs.
+            </li>
+            <li className="mt-6">
+              Data Science & Machine Learning: I utilize modern ML algorithms, models to analyze multitude of data and develop/test theories
+              that help to deepen our understanding of the AGNs. Visit my &ldquo;Projects&rdquo; tab.
             </li>
           </div>
         </Layout>
