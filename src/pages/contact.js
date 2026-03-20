@@ -73,7 +73,7 @@ function Contact() {
                   Connect With Me On Social Media
                 </h1>
                 <div className="flex flex-row ml-56 mt-6 sm:ml-2 sm:justify-center md:justify-center md:ml-2 lg:ml-24 sm:mb-4 xl:-ml-8 2xl:ml-12 3xl:ml-24 ">
-                  <Link href="https://www.linkedin.com/in/sagar-adhikari-a07350175/">
+                  <Link href="https://www.linkedin.com/in/adhikarisagar">
                     <LinkedInIcon className="!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mr-4 2xl:w-[40px]" />
                   </Link>
                   <Link href="https://orcid.org/0009-0006-1029-1026">
