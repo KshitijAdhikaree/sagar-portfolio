@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }) {
       </Head>
 
       <main
-        className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}
+        className={`${montserrat.variable} font-mont bg-gradient-to-br from-light to-gray-300 dark:from-dark dark:to-gray-900 text-dark dark:text-light w-full min-h-screen`}
       >
         <NavBar />
         <AnimatePresence mode='wait'>

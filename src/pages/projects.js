@@ -5,8 +5,9 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 import { ProjectData } from "../../public/projectData";
+import Image from "next/image";
 
-const Projects = ({ title, summary, link, isPressAndTalk }) => {
+const Projects = ({ title, summary, link, image, tech, isPressAndTalk }) => {
   return (
     <article
       className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-10 relative rounded-br-2xl
@@ -18,6 +19,15 @@ const Projects = ({ title, summary, link, isPressAndTalk }) => {
       />
 
       <div className="w-full flex flex-col items-center justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6 text-center">
+        {image && (
+          <Image
+            src={`/images/${image}`}
+            alt={title}
+            width={300}
+            height={300}
+            className="mb-4 rounded-lg"
+          />
+        )}
         {isPressAndTalk && link ? (
           <Link href={link} className="my-2 w-full text-dark text-center text-2xl font-bold dark:text-light sm:text-sm hover:underline">
             {title}
@@ -31,6 +41,15 @@ const Projects = ({ title, summary, link, isPressAndTalk }) => {
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm text-justify">
           {summary}
         </p>
+        {tech && tech.length > 0 && (
+          <div className="my-2 flex flex-wrap justify-center gap-2">
+            {tech.map((t, index) => (
+              <span key={index} className="bg-gray-200 dark:bg-gray-700 text-dark dark:text-light px-2 py-1 rounded text-sm">
+                {t}
+              </span>
+            ))}
+          </div>
+        )}
         {!isPressAndTalk && (
           <div className="mt-2 flex flex-row items-center">
             {link ? (
@@ -69,7 +88,7 @@ const ProjectsPage = () => {
         
         <Layout className="pt-16">
           <AnimatedText
-            text="Projects"
+            text="Data Science & ML Projects"
             className="mb-8 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center "
           />
           <div className="grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
@@ -79,6 +98,8 @@ const ProjectsPage = () => {
                   title={projects.title}
                   summary={projects.description}
                   link={projects.link}
+                  image={projects.image}
+                  tech={projects.tech}
                   isPressAndTalk={false}
                 />
               </div>
