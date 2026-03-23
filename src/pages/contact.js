@@ -74,14 +74,14 @@ function Contact() {
                   Connect With Me On Social Media
                 </h1>
                 <div className="flex flex-row ml-56 mt-6 sm:ml-2 sm:justify-center md:justify-center md:ml-2 lg:ml-24 sm:mb-4 xl:-ml-8 2xl:ml-12 3xl:ml-24 ">
-                  <Link href="https://www.linkedin.com/in/sagar-adhikari-a07350175/">
+                  <Link href="https://www.linkedin.com/in/adhikarisagar">
                     <LinkedInIcon className="!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mr-4 2xl:w-[40px]" />
                   </Link>
                   <Link href="https://orcid.org/0009-0006-1029-1026">
                     <OrcidIcon className="!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mx-4 2xl:w-[40px]" />
                   </Link>
                   <Link href="https://scholar.google.com/citations?user=L1xZ36AAAAAJ&hl=en&oi=ao">
-                    <GoogleScholarIcon className="!w-[5rem] xs:!w-[45px] md:w-[80px] lg:!w-[80px] mx-4 -mt-6 md:-mt-5 2xl:w-[50px] xs:-mt-3 2xl:-mt-3 xl:-mt-5" />
+                    <GoogleScholarIcon className="!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mx-4 -mt-6 md:-mt-5 2xl:w-[40px] xs:-mt-3 2xl:-mt-3 xl:-mt-5" />
                   </Link>
                   <Link href="https://www.facebook.com/Dexteradhikari">
                     <FacebookIcon className="!w-[4rem] xs:!w-[35px] md:w-[60px] lg:!w-[60px] mx-4 2xl:w-[40px]" />
