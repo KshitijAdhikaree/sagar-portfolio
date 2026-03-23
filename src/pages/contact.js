@@ -6,7 +6,6 @@ import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 import {
   OrcidIcon,
-  InstagramIcon,
   FacebookIcon,
   LinkedInIcon,
   GithubIcon,
@@ -59,7 +58,7 @@ function Contact() {
             <div className="w-1/2 lg:w-full md:w-full">
               <div className="flex items-center self-start lg:self-center pt-0 sm:mt-6">
                 <AnimatedText
-                  text="Contact Info"
+                  text="Reach Me Directly"
                   className="xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center"
                 />
               </div>
