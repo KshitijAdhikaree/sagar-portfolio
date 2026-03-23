@@ -2,8 +2,8 @@ import React from 'react'
 
 const ScrollDown = () => {
   return (
-    <div className='flex flex-col items-center justify-center text-dark mt-8 dark:text-light'>
-      <div className='mb-2'>
+    <div className='flex flex-col items-center justify-center text-light/70 mt-16'>
+      <div className='mb-[-8rem]'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           className='h-6 w-6 animate-bounce'
@@ -14,14 +14,12 @@ const ScrollDown = () => {
           <path
             strokeLinecap='round'
             strokeLinejoin='round'
-            strokeWidth='2'
+            strokeWidth='4'
             d='M19 14l-7 7m0 0l-7-7m7 7V3'
           ></path>
         </svg>
       </div>
-      <div className='text-center'>
-        <p className='text-lg font-medium '>Scroll down</p>
-      </div>
+      
     </div>
   )
 }

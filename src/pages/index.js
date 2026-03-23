@@ -16,11 +16,14 @@ function Home() {
       <TransitionEffect />
       <main>
         <div className="relative">
+          {/* Black overlay */}
+  <div className="absolute inset-0 bg-black/20"></div>
           <Image
             src={background}
             alt="background"
             className="-mt-32 h-[104vh] sm:h-[120vh]"
           />
+           
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-6 xs:mt-2 xs:-ml-2">
             <AnimatedText
               text="Sagar Adhikari, PhD"
