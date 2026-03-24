@@ -64,13 +64,10 @@ function Contact() {
               </div>
               <div className="text-xl mt-6 text-center font-semibold sm:text-base">
                 <h1 className="mb-4">Email : sagara@clemson.edu, adhikaree.sagar@gmail.com</h1>
-                
-                
-                <h1 className="mb-8">Address : Clemson, SC, USA</h1>
-              </div>
+                </div>
               <div className="">
                 <h1 className="text-2xl text-center font-bold">
-                  Connect With Me On Social Media
+                  Connect With Me
                 </h1>
                 <div className="flex flex-row ml-56 mt-6 sm:ml-2 sm:justify-center md:justify-center md:ml-2 lg:ml-24 sm:mb-4 xl:-ml-8 2xl:ml-12 3xl:ml-24 ">
                   <Link href="https://www.linkedin.com/in/adhikarisagar">
