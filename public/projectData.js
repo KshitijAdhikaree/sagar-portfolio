@@ -1,6 +1,15 @@
 export const ProjectData = [
   {
-    id: 1,
+    id: 8,
+    title:
+    "ArcGIS Pro Mapping of population density in the state of Georgia",
+    description:
+    "Using ArcGIS Pro, I created a map of the population density in the counties in the state of Georgia. The map shows a gradient color scale for the counties with population less than 100,000. The data for this project was sourced from the US Census Bureau. I also show the distribution of the total population in each county.",
+    link: "/images/Georgia_Demographics.jpg",
+    image: "Georgia_Demographics.jpg",
+    tech: ["ArcGIS Pro", "Data Analysis", "Data Visualization"]
+  },{
+    id: 7,
     title:
     "My Research Assistant",
     description:
@@ -9,7 +18,7 @@ export const ProjectData = [
     image: "RAG_assistant_screenshot.png",
     tech: ["Python", "RAG", "NLP", "Streamlit"]
   },{
-    id: 2,
+    id: 6,
     title:
     "Stock Market Forecasting",
     description:
@@ -19,7 +28,7 @@ export const ProjectData = [
     tech: ["Python", "Pandas", "Scikit-learn", "Time Series Analysis"]
   },
   {
-    id: 3,
+    id: 5,
     title:
     "ML Classifications of Fermi-LAT Blazars",
     description:
@@ -39,7 +48,7 @@ export const ProjectData = [
     tech: ["Python", "TensorFlow", "VGG19", "Deep Learning"]
   },
   {
-    id: 5,
+    id: 3,
     title:
       "Hangman ML Solver",
     description:
@@ -49,7 +58,7 @@ export const ProjectData = [
     tech: ["Python", "N-Gram", "NLP", "Jupyter"]
   },
   {
-    id: 6,
+    id: 2,
     title:
       "Enhancing Periodicity Analysis Accuracy Through Phase Fold Amplitude Minimization (PFAM) Technique",
     description:
@@ -59,7 +68,7 @@ export const ProjectData = [
     tech: ["Python", "Time Series Analysis", "Astronomy", "Statistics"]
   },
   {
-    id: 7,
+    id: 1,
     title:
       "Can Blazar flares in gamma-ray LCs be explained by jet angle and geometry?",
     description: "In Prep...",
