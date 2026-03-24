@@ -6,7 +6,7 @@ export const ProjectData = [
     description:
     "An end-to-end Retrieval-Augmented Generation (RAG) web app built to interactively answer questions related to my peer-reviewed publications. This project is an AI research assistant, which retrieves relevant responses from dense academic papers, researching Supermassive Black Holes, Active Galactic Nuclei (AGNs), Blazars, and QPO analysis of blazars.",
     link: "https://github.com/sagara92/SAs_Research_Assistant",
-    image: "",
+    image: "RAG_assistant_screenshot.png",
     tech: ["Python", "RAG", "NLP", "Streamlit"]
   },{
     id: 2,
@@ -15,7 +15,7 @@ export const ProjectData = [
     description:
     "S&P 500 represents the 500 most valuable companies of the US stock market. In this project, I utilize multiple statistical and machine learning models to forecast the market trend. See for yourself how different models stack up against eachother and how effective are they to forecast impending market crash.",
     link: "https://github.com/sagara92/SandP_Trends_Prediction",
-    image: "",
+    image: "SandPforecast.png",
     tech: ["Python", "Pandas", "Scikit-learn", "Time Series Analysis"]
   },
   {
