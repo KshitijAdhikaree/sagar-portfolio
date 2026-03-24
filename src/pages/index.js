@@ -87,6 +87,9 @@ function Home() {
               periods in a random timeseries data when various amount of gaps
               are introduced randomly.
             </li>
+            <p className="mt-8 text-center">
+              <Link href="/research" className="text-blue-600 hover:underline dark:text-blue-400 font-semibold text-2xl">View All Research Projects</Link>
+            </p>
           </div>
         </Layout>
       </main>

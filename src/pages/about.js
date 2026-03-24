@@ -89,6 +89,15 @@ const about = () => {
           <div className="text-dark text-xl text-justify mx-40 dark:text-light sm:mx-2 sm:text-base xs:-mx-2">
             <li className="mt-6">
               <strong>
+                NASA Fermi-GI Research Grant for the project: &quot;Long-term QPO in 2FHL Blazars&quot;
+              </strong>
+              <br />
+              <em>
+                $80,000 grant awarded by NASA Fermi Guest Investigator Program, 2025.
+              </em>
+            </li>
+            <li className="mt-6">
+              <strong>
                 Finding binary supermassive black holes with historical optical
                 data; PG 1553+113 case study
               </strong>
@@ -106,7 +115,7 @@ const about = () => {
                 className="hover:underline"
               >
                 <strong>
-                  Decades long periodicity in 2fhl blazar PG 1553+113?
+                  Decades long periodicity in 2FHL blazar PG 1553+113?
                 </strong>
               </a>
               <br />
