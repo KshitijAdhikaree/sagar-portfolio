@@ -35,7 +35,7 @@ export const ProjectData = [
     description:
     "Transfer the artistic style of a 'style' image to a 'content' image. In this project, I utilize a pretrained image layer filtering algorithm VGG19 to transform the style of an image.",
     link: "https://github.com/sagara92/Image_style_transfer_ML",
-    image: "",
+    image: "image_transfer_result.png",
     tech: ["Python", "TensorFlow", "VGG19", "Deep Learning"]
   },
   {
