@@ -63,18 +63,18 @@ const about = () => {
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-base text-justify xs:text-base ">
                 I find the mysteries of the universe to be incredibly
-                fascinating as an astrophysicist. My goal is to figure out how
-                the accreting supermassive blackhole system at the center of
-                active galaxies emits light.
+                fascinating as both an astrophysicist and a data scientist.
+                Whether I&apos;m investigating how supermassive black hole systems 
+                emit light or uncovering hidden patterns in vast datasets, my goal 
+                is always to extract meaningful insights from complex information.
               </p>
               <p className="my-4 text-base font-medium md:text-sm sm:text-base text-justify xs:text-base ">
-                Working with scientists from all over the world is one of the
-                most intriguing aspects of my job as an astrophysicist.
-                I&apos;ve been able to contribute to ground-breaking studies
-                that have expanded our knowledge of the universe through these
-                collaborations. From analyzing data from telescopes to
-                developing complex mathematical models&#44; I am constantly
-                working with others to push the boundaries of our knowledge.
+                Working with massive, high-dimensional data from telescopes around 
+                the world has honed my expertise in statistical modeling, machine 
+                learning, and advanced data visualization. From writing predictive 
+                algorithms to developing complex mathematical models&#44; I am 
+                constantly seeking to apply data science techniques to push the 
+                boundaries of our knowledge and solve broad, real-world problems.
               </p>
             </div>
           </div>
