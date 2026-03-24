@@ -91,9 +91,9 @@ const ProjectsPage = () => {
             text="Data Science & ML Projects"
             className="mb-8 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center "
           />
-          <div className="grid grid-cols-12 gap-24 gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+          <div className="grid grid-cols-12 gap-y-10 gap-x-8 xl:gap-x-8 lg:gap-x-6 sm:gap-x-0">
             {ProjectData.map((projects) => (
-              <div key={projects.id} className="col-span-12">
+              <div key={projects.id} className="col-span-6 md:col-span-12 lg:col-span-12">
                 <Projects
                   title={projects.title}
                   summary={projects.description}
