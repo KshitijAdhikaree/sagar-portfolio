@@ -60,7 +60,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light relative z-[100] lg:px-16 md:px-12 sm:px-8 ">
+    <header className="w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light sticky top-0 z-[100] bg-light/80 dark:bg-dark/80 backdrop-blur-md lg:px-16 md:px-12 sm:px-8 ">
       <button
         className=" flex-col justify-center items-center hidden lg:flex"
         aria-label="onClick"
