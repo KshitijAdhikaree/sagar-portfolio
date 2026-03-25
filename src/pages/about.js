@@ -48,8 +48,7 @@ const about = () => {
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
-                  href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=adhikaree.sagar@gmail.com"
-                  target={"_blank"}
+                  href="/contact"
                   className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base xs:ml-0"
                 >
                   Contact
