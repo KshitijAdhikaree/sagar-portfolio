@@ -17,8 +17,8 @@ const about = () => {
       </Head>
       <TransitionEffect />
 
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light xs:-mx-2">
-        <Layout className="pt-0 md:p-16 sm:pt-2 ">
+      <main className="flex flex-col items-center justify-center text-dark w-full mb-8 dark:text-light xs:-mx-2">
+        <Layout className="pt-16 md:p-16 sm:pt-16">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 lg:w-full md:w-full md:-mt-8 ">
               <div

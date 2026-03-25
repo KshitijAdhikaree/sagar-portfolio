@@ -29,7 +29,7 @@ function Home() {
           />
             <AnimatedText
               text="Data Scientist | ML Engineer| Astrophysicist | Researcher"
-              className="!text-3xl xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-2xl text-center sm:mb-4 xs:!text-xl"
+              className="!text-3xl xl:!text-5xl lg:!text-4xl md:!text-3xl sm:!text-3xl text-center sm:mb-4 xs:!text-xl"
             />
             <div className="flex items-center justify-center mt-6">
               <Link href="/projects" className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base">

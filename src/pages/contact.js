@@ -52,8 +52,8 @@ function Contact() {
         <meta name="description" content="description" />
       </Head>
       <TransitionEffect />
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Layout className="pt-0 md:p-16 sm:pt-2">
+      <main className="flex flex-col items-center justify-centertext-dark w-full mb-8 dark:text-light">
+        <Layout className="pt-16 md:p-16 sm:pt-16">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 lg:w-full md:w-full">
               <div className="flex items-center self-start lg:self-center pt-0 sm:mt-6">
