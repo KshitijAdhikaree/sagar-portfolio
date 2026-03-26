@@ -67,7 +67,7 @@ const ResearchPage = () => {
         <meta name="description" content="description" />
       </Head>
       <TransitionEffect />
-      <main className="w-full mb-8 flex flex-col items-center justify-center dark:text-light ">
+      <main className="w-full flex flex-col items-center justify-center dark:text-light ">
         
         <Layout className="pt-16">
           <AnimatedText
