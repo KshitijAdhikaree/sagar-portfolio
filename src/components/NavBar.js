@@ -60,14 +60,14 @@ const NavBar = () => {
   };
 
   return (
-    <header className="w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light sticky top-0 z-[100] bg-light/80 dark:bg-dark/80 backdrop-blur-md lg:px-16 md:px-12 sm:px-8 ">
+    <header className="w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light sticky top-0 z-[100] bg-light/80 dark:bg-dark/80 backdrop-blur-md lg:px-16 md:px-12 sm:px-8">
       <button
-        className=" flex-col justify-center items-center hidden lg:flex"
-        aria-label="onClick"
+        className="flex-col justify-center items-center hidden lg:flex z-40"
+        aria-label="Toggle menu"
         onClick={handleClick}
       >
         <span
-          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${
+          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
             isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
           }`}
         ></span>
@@ -77,7 +77,7 @@ const NavBar = () => {
           }`}
         ></span>
         <span
-          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${
+          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
             isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
           }`}
         ></span>
@@ -115,9 +115,11 @@ const NavBar = () => {
       {/* Mobile */}
       {isOpen ? (
         <motion.div
-          initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
-          animate={{ scale: 1, opacity: 1 }}
-          className="fixed min-w-[70vw] flex flex-col justify-between z-30 items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/75 dark:bg-light/75 rounded-lg backdrop-blur-md py-[60px]"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.95 }}
+          transition={{ duration: 0.2 }}
+          className="fixed min-w-[70vw] sm:min-w-[90vw] flex flex-col justify-start items-center top-16 left-1/2 -translate-x-1/2 bg-dark/90 dark:bg-light/90 rounded-lg backdrop-blur-md py-8 px-6 max-h-[80vh] overflow-y-auto z-30"
         >
           <nav className="flex items-center flex-col justify-center ">
             <CustomMobileLink
@@ -166,7 +168,7 @@ const NavBar = () => {
           </button>
         </motion.div>
       ) : null}
-      <div className="hidden sm:block absolute left-[50%] top-2 translate-x-[-50%] md:left-[50%]">
+      <div className="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
         <Logo />
       </div>
     </header>
