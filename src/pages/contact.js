@@ -53,10 +53,10 @@ function Contact() {
       </Head>
       <TransitionEffect />
       <main className="flex flex-col items-center justify-center text-dark w-full dark:text-light">
-        <Layout className="pt-16 md:p-16 sm:pt-16">
-          <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 lg:w-full md:w-full">
-              <div className="flex items-center self-start lg:self-center pt-0 sm:mt-6">
+        <Layout className=" md:p-16 sm:pt-16">
+          <div className="flex items-center justify-between w-full lg:flex-col ">
+            <div className="w-1/2 lg:w-full md:w-full ">
+              <div className="flex items-center self-start lg:self-center pt-0 sm:mt-6 ">
                 <AnimatedText
                   text="Reach Me Directly"
                   className="xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center"
@@ -96,7 +96,7 @@ function Contact() {
               />
               <form
                 onSubmit={handleSubmit}
-                className="space-y-4 mt-8 w-[500px] xs:w-[360px] "
+                className="space-y-4 mt-8 w-[500px] xs:w-[360px] sm:p-8 xs:p-4"
               >
                 <div>
                   <label className="block font-bold mb-2 " htmlFor="name">
