@@ -119,7 +119,7 @@ const NavBar = () => {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.95 }}
           transition={{ duration: 0.2 }}
-          className="fixed min-w-[70vw] sm:min-w-[90vw] flex flex-col justify-start items-center top-16 left-1/2 -translate-x-1/2 bg-dark/90 dark:bg-light/90 rounded-lg backdrop-blur-md py-8 px-6 max-h-[80vh] overflow-y-auto z-30"
+          className="fixed w-[calc(100vw-16px)] sm:w-[calc(100vw-48px)] max-w-[500px] flex flex-col justify-start items-center top-14 left-6 -translate-x-1/2 bg-dark/90 dark:bg-light/90 rounded-lg backdrop-blur-md py-8 px-2 sm:px-2 max-h-[80vh] overflow-y-auto z-30"
         >
           <nav className="flex items-center flex-col justify-center ">
             <CustomMobileLink
@@ -168,7 +168,7 @@ const NavBar = () => {
           </button>
         </motion.div>
       ) : null}
-      <div className="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+      <div className="hidden lg:block absolute left-1/2 top-7 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
         <Logo />
       </div>
     </header>
