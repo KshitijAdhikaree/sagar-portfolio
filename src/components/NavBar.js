@@ -60,7 +60,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light sticky top-0 z-[100] bg-light/80 dark:bg-dark/80 backdrop-blur-md lg:px-16 md:px-12 sm:px-8">
+    <header className="w-full px-32 py-4 md:py-8 xs:py-8 sm:py-8 lg:py-8 font-medium flex items-center justify-between dark:text-light sticky top-0 z-[100] bg-light/80 dark:bg-dark/80 backdrop-blur-md lg:px-16 md:px-12 sm:px-8">
       <button
         className="flex-col justify-center items-center hidden lg:flex z-40"
         aria-label="Toggle menu"
@@ -86,7 +86,7 @@ const NavBar = () => {
       {/* Desktop */}
 
       <div className="w-full flex justify-between items-center lg:hidden">
-        <nav className="-mt-2">
+        <nav className="flex items-center justify-center -mb-4 ">
           <Logo />
         </nav>
         <nav>
@@ -115,13 +115,11 @@ const NavBar = () => {
       {/* Mobile */}
       {isOpen ? (
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.95 }}
-          transition={{ duration: 0.2 }}
-          className="fixed w-[calc(100vw-16px)] sm:w-[calc(100vw-48px)] max-w-[500px] flex flex-col justify-start items-center top-14 left-6 -translate-x-1/2 bg-dark/90 dark:bg-light/90 rounded-lg backdrop-blur-md py-8 px-2 sm:px-2 max-h-[80vh] overflow-y-auto z-30"
+          initial={{ scale: 0, opacity: 0, x: "-50%", y: "50%" }}
+          animate={{ scale: 1, opacity: 1 }}
+          className="fixed min-w-[70vw] flex flex-col justify-between z-30 items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/80 dark:bg-light/80 rounded-lg backdrop-blur-md py-[60px]"
         >
-          <nav className="flex items-center flex-col justify-center ">
+          <nav className="flex items-center flex-col justify-center">
             <CustomMobileLink
               href="/"
               title="Home"
@@ -168,7 +166,7 @@ const NavBar = () => {
           </button>
         </motion.div>
       ) : null}
-      <div className="hidden lg:block absolute left-1/2 top-7 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+      <div className="hidden lg:block absolute left-[47%] top-2 traslate-x-[-50%] pointer-events-none">
         <Logo />
       </div>
     </header>
