@@ -2,33 +2,24 @@ export const ProjectData = [
   {
     id: 8,
     title:
-    "ArcGIS Pro Mapping of population density in the state of Georgia",
-    description:
-    "Using ArcGIS Pro, I created a map of the population density in the counties in the state of Georgia. The map shows a gradient color scale for the counties with population less than 100,000. The data for this project was sourced from the US Census Bureau. I also show the distribution of the total population in each county.",
-    link: "/images/Georgia_Demographics.jpg",
-    image: "Georgia_Demographics.jpg",
-    tech: ["ArcGIS Pro", "Data Analysis", "Data Visualization"]
-  },{
-    id: 7,
-    title:
     "My Research Assistant",
     description:
     "An end-to-end Retrieval-Augmented Generation (RAG) web app built to interactively answer questions related to my peer-reviewed publications. This project is an AI research assistant, which retrieves relevant responses from dense academic papers, researching Supermassive Black Holes, Active Galactic Nuclei (AGNs), Blazars, and QPO analysis of blazars.",
     link: "https://github.com/sagara92/SAs_Research_Assistant",
     image: "RAG_assistant_screenshot.png",
-    tech: ["Python", "RAG", "NLP", "Streamlit"]
+    tech: ["Python", "LangChain", "RAG", "NLP", "Streamlit"]
   },{
-    id: 6,
+    id: 7,
     title:
     "Stock Market Forecasting",
     description:
     "S&P 500 represents the 500 most valuable companies of the US stock market. In this project, I utilize multiple statistical and machine learning models to forecast the market trend. See for yourself how different models stack up against eachother and how effective are they to forecast impending market crash.",
     link: "https://github.com/sagara92/SandP_Trends_Prediction",
     image: "SandPforecast.png",
-    tech: ["Python", "Pandas", "Scikit-learn", "Time Series Analysis"]
+    tech: ["Python", "Pandas", "HMMLearn", "Time Series Analysis"]
   },
   {
-    id: 5,
+    id: 6,
     title:
     "ML Classifications of Fermi-LAT Blazars",
     description:
@@ -36,9 +27,8 @@ export const ProjectData = [
     link: "https://github.com/sagara92/Fermi_LAT_ML_project",
     image: "GBDT_CM.png",
     tech: ["Python", "XGBoost", "Scikit-learn", "Random Forest"]
-  },
-  {
-    id: 4,
+  },{
+    id: 5,
     title:
     "Image style transfer using TensorFlow",
     description:
@@ -46,8 +36,25 @@ export const ProjectData = [
     link: "https://github.com/sagara92/Image_style_transfer_ML",
     image: "image_transfer_result.png",
     tech: ["Python", "TensorFlow", "VGG19", "Deep Learning"]
-  },
-  {
+  },{
+    id: 9,
+    title:
+    "ArcGIS Pro Mapping of Tigerbird Habitat in Saluda Basin",
+    description:
+    "Using ArcGIS Pro, I created a habitat map of the Tigerbird in the Saluda Basin. The map uses intersection, buffer, and other spatial analysis tools. The data for this project was provided by Clemson University.",
+    link: "/images/Saluda_TigerBird_Habitat.jpg",
+    image: "Saluda_TigerBird_Habitat.jpg",
+    tech: ["ArcGIS Pro", "Data Analysis", "Spatial Analysis", "Data Visualization"]
+  },{
+    id: 4,
+    title:
+    "ArcGIS Pro Mapping of population density in the state of Georgia",
+    description:
+    "Using ArcGIS Pro, I created a map of the population density in the counties in the state of Georgia. The map shows a gradient color scale for the counties with population less than 100,000. The data for this project was sourced from the US Census Bureau. I also show the distribution of the total population in each county.",
+    link: "/images/Georgia_Demographics.jpg",
+    image: "Georgia_Demographics.jpg",
+    tech: ["ArcGIS Pro", "Data Analysis", "Data Visualization"]
+  },{
     id: 3,
     title:
       "Hangman ML Solver",
