@@ -47,12 +47,6 @@ const about = () => {
                 >
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
-                <Link
-                  href="/contact"
-                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base xs:ml-0"
-                >
-                  Contact
-                </Link>
               </div>
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center sm:mt-4">
@@ -82,7 +76,7 @@ const about = () => {
       <main>
         <Layout>
           <AnimatedText
-            text="Education And Achievements"
+            text="Notable Achievements"
             className="xl:!text-5xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-3xl justify-center text-center mb-8"
           />
           <div className="text-dark text-xl text-justify mx-40 dark:text-light sm:mx-2 sm:text-base xs:-mx-2">
@@ -104,6 +98,22 @@ const about = () => {
               <em>
                 Meeting of Astronomers of South Carolina, Florence, SC, USA,
                 2025
+              </em>
+            </li>
+            <li className="mt-6">
+              <a
+                href = "https://news.clemson.edu/using-a-century-of-data-clemson-astrophysicists-may-have-found-a-binary-supermassive-black-hole/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                <strong>
+                  News Coverage:
+                </strong>
+              </a>
+              <br />
+              <em>
+                Using a century of data, Clemson astrophysicists may have found a binary supermassive black hole
               </em>
             </li>
             <li className="mt-6">
