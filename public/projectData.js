@@ -1,5 +1,14 @@
 export const ProjectData = [
   {
+    id: 10,
+    title:
+    "ArcGIS Pro Mapping showing the wildfire hotspots in the Carolinas",
+    description:
+    "Using ArcGIS Pro, I created a map showing the wildfire hotspots in the Carolinas. The map uses spatial statistics tools. The data for this project was provided by Clemson University.",
+    link: "/images/Wildfire_Carolinas.jpg",
+    image: "Wildfire_Carolinas.jpg",
+    tech: ["ArcGIS Pro", "Data Analysis", "Spatial Statistics", "Data Visualization"]
+  },{
     id: 8,
     title:
     "My Research Assistant",
