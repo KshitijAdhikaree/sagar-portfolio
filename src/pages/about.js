@@ -81,6 +81,22 @@ const about = () => {
           />
           <div className="text-dark text-xl text-justify mx-40 dark:text-light sm:mx-2 sm:text-base xs:-mx-2">
             <li className="mt-6">
+              <a
+                href = "/CCGT_certificate_online_26_Adhikari.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                <strong>
+                  ArcGIS Pro Certificate:
+                </strong>
+              </a>
+              <br />
+              <em>
+                ArcGis Pro Certificate of Completion, 2026.
+              </em>
+            </li>
+            <li className="mt-6">
               <strong>
                 NASA Fermi-GI Research Grant for the project: &quot;Long-term QPO in 2FHL Blazars&quot;
               </strong>
