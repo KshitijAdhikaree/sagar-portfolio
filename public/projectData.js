@@ -1,6 +1,6 @@
 export const ProjectData = [
   {
-    id: 10,
+    id: 11,
     title:
     "ArcGIS Pro Mapping showing the wildfire hotspots in the Carolinas",
     description:
@@ -17,6 +17,15 @@ export const ProjectData = [
     link: "https://github.com/sagara92/SAs_Research_Assistant",
     image: "RAG_assistant_screenshot.png",
     tech: ["Python", "LangChain", "RAG", "NLP", "Streamlit"]
+  },{
+    id: 10,
+    title:
+    "Tableau Dashboard showing the dynamic stats of the UEFA Champions League Finals 2018 and 2019",
+    description:
+    "Using Tableau, I created a dashboard showing the dynamic statistics of the UEFA Champions League Finals of 2018 and 2019. The dashboard uses public data provided by Rob Carroll and shows the stats of the players and teams in the finals.",
+    link: "https://public.tableau.com/app/profile/sagar.adhikari3047/viz/UCL_2018_19_Final_Dashboard/Dashboard",
+    image: "TableauDashboard.png",
+    tech: ["Tableau", "Data Analysis", "Data Visualization"]
   },{
     id: 7,
     title:
