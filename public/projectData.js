@@ -1,5 +1,14 @@
 export const ProjectData = [
   {
+    id: 12,
+    title:
+    "Tableau Dashboard interactive passmap visualization of the 2018 UEFA Champions League Finals",
+    description:
+    "Using Tableau, I created an interactive dashboard showing the pass map of the UEFA Champions League Finals of 2018. The dashboard uses public data provided by Rob Carroll and shows the heatmap and pass map of the players of both teams in the finals.",
+    link: "https://public.tableau.com/app/profile/sagar.adhikari3047/viz/2018_UECL_Final_PassMap/2018FinalPassMap",
+    image: "Tableau_2018_Final_Passmap.png",
+    tech: ["Tableau", "Data Analysis", "Data Visualization"]
+  },{
     id: 11,
     title:
     "ArcGIS Pro Mapping showing the wildfire hotspots in the Carolinas",
