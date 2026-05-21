@@ -1,5 +1,14 @@
 export const ProjectData = [
   {
+    id: 13,
+    title:
+    "EPL Soccer Match Predictor",
+    description:
+    "A machine learning model that predicts the outcome of EPL soccer matches using historical data and various engineered features focused heavily on game state xG and shots data throughout the match.",
+    link: "https://github.com/sagara92/GameStatexG_Soccer_Predictor",
+    image: "EPL_prediction_result.png",
+    tech: ["Machine Learning", "Python", "XGBoost", "Random Forest", "Exploratory Data Analysis", "Data Visualization"]
+  },{
     id: 12,
     title:
     "Tableau Dashboard interactive passmap visualization of the 2018 UEFA Champions League Finals",
