@@ -4,7 +4,6 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
-import { ProjectData } from "../../public/projectData";
 import { PublicationData } from "../../public/publicationData";
 import { PressAndTalkData } from "../../public/pressAndTalkData";
 
