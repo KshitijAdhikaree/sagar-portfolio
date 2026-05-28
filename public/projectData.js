@@ -5,10 +5,6 @@ export const ProjectData = [
     "EPL Soccer Match Predictor",
     description:
     "A machine learning model that predicts the outcome of EPL soccer matches using historical data (detailed match data from the Premier League 2025-2026 season) and various engineered features focused heavily on game state xG and shots data throughout the match. The XGBoost model was found to be the most accurate with an accuracy of over 92%.",
-<<<<<<< HEAD
-=======
-    //link: "https://github.com/sagara92/GameStatexG_Soccer_Predictor",
->>>>>>> ed33e4f5077d99005369d07457faf799436d2c50
     link: "/eplPredict",
     image: "EPL_prediction_result.png",
     tech: ["Machine Learning", "Python", "XGBoost", "Random Forest", "Gradient Boosting", "Exploratory Data Analysis", "Data Visualization"]
