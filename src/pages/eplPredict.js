@@ -553,8 +553,7 @@ export default function EPLPredictor() {
 
                         {/* Document Footer (Resume footer style) */}
                         <footer className="mt-8 pt-4 border-t border-gray-300 dark:border-gray-700 text-center text-[10px] text-gray-500 dark:text-gray-400 font-mono">
-                            EPL Predictor Report | Compiled on Sagar Adhikari&apos;s Research
-                            Environment
+                             EPL Predictor Report | Compiled on Sagar Adhikari&apos;s Research Environment
                         </footer>
                     </article>
                 </Layout>
