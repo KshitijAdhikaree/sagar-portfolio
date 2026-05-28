@@ -8,15 +8,15 @@ export default async function handler(req, res) {
   const { name, email, message } = req.body
 
   // create reusable transporter object using the default SMTP transport
-  var transporter = nodemailer.createTransport({
-    host: 'smtp-mail.outlook.com', // hostname
-    secureConnection: false, // use SSL
-    port: 587, // port for secure SMTP
-    auth: {
-      user: 'sagarportfolio@outlook.com',
-      pass: 'r#wq*4nDqhV',
-    },
-  })
+ const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: Number(process.env.SMTP_PORT),
+  secure: false, // true for 465, false for 587
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
