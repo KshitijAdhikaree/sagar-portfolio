@@ -115,7 +115,11 @@ export default function EPLPredictor() {
                             </div> */}
                             <p className="text-xl text-gray-600 dark:text-gray-400 mt-2 text-justify leading-relaxed">
                                 This Dashboard queries pretrained machine learning models hosted
+<<<<<<< HEAD
                                 on Hugging Face Spaces. I have trained seperate models for home and away teams given team&apos;s performance data.
+=======
+                                on Hugging Face Spaces. I have trained seperate models for home and away teams given team's performance data.
+>>>>>>> ed33e4f5077d99005369d07457faf799436d2c50
                                 The features include shot-wise match statistics, expected goals (xG) metrices, and recent performance curves
                                 to predict the final scores. Select your matchup and preferred model to see the predicted scoreline with
                                 probability distributions and the key features influencing the prediction.
