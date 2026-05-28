@@ -105,19 +105,31 @@ export default function EPLPredictor() {
                         />
 
                         <header className="mb-6 border-b-2 border-gray-800 dark:border-gray-300 pb-4">
-                            <div className="flex justify-between items-baseline flex-wrap gap-2">
+                            {/* <div className="flex justify-between items-baseline flex-wrap gap-2">
                                 <h1 className="text-3xl font-bold uppercase tracking-wider text-gray-900 dark:text-gray-100">
                                     ML Prediction Engine
                                 </h1>
                                 <span className="text-xs text-gray-500 dark:text-gray-400 font-mono">
-                                    EPL SEASON 25/26 ANALYSIS
+                                    Trained with EPL 2025/26 Match Data
                                 </span>
-                            </div>
+                            </div> */}
                             <p className="text-xl text-gray-600 dark:text-gray-400 mt-2 text-justify leading-relaxed">
-                                This dashboard queries a trained machine learning model hosted
-                                on Hugging Face Spaces. It evaluates match statistics, recent
-                                expected goals (xG) metrics, and historical performance curves
-                                to predict results, goal distributions, and outcomes.
+                                This Dashboard queries pretrained machine learning models hosted
+                                on Hugging Face Spaces. I have trained seperate models for home and away teams given team's performance data.
+                                The features include shot-wise match statistics, expected goals (xG) metrices, and recent performance curves
+                                to predict the final scores. Select your matchup and preferred model to see the predicted scoreline with
+                                probability distributions and the key features influencing the prediction.
+                            </p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400 mt-4 text-justify leading-relaxed">
+                                See the model documentation and code on my github:{" "}
+                                <a
+                                    href="https://github.com/sagara92/GameStatexG_Soccer_Predictor"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-500 hover:text-blue-700 dark:hover:text-blue-400 underline"
+                                >
+                                    GameStatexG_Soccer_Predictor
+                                </a>
                             </p>
                         </header>
 
@@ -163,11 +175,8 @@ export default function EPLPredictor() {
                                     <div className="flex justify-center">
                                         <div className="relative flex items-center justify-center">
 
-                                            {/* Ping Animation */}
-                                            <div className="absolute h-24 w-24 rounded-full bg-blue-500/20 animate-ping" />
-
                                             {/* VS Circle */}
-                                            <div className="relative h-24 w-24 rounded-full bg-dark  border-2 border-white/60 flex items-center justify-center shadow-lg dark:bg-light">
+                                            <div className="relative h-20 w-20 rounded-full bg-dark  border-2 border-white/60 flex items-center justify-center shadow-lg dark:bg-light">
                                                 <span className="text-white font-black text-2xl tracking-widest dark:text-dark">
                                                     VS
                                                 </span>
@@ -225,7 +234,7 @@ export default function EPLPredictor() {
                             {/* Model */}
                             <div className="max-w-md mx-auto">
                                 <label className="block text-xs uppercase tracking-widest font-bold mb-2">
-                                    Prediction Engine
+                                    Prediction Model
                                 </label>
 
                                 <select
@@ -241,6 +250,7 @@ export default function EPLPredictor() {
 
                             {/* Predict Button */}
                             <div className="flex justify-center pb-12">
+                                
                                 <button
                                     type="submit"
                                     disabled={
@@ -262,6 +272,8 @@ export default function EPLPredictor() {
       min-w-[180px]
     "
                                 >
+                                    {/* Ping Animation */}
+                                <div className="absolute h-10 w-24 rounded-full bg-blue-500/20 animate-ping" />
                                     {loading ? (
                                         <span className="flex items-center justify-center gap-3 uppercase">
                                             <svg
@@ -288,7 +300,7 @@ export default function EPLPredictor() {
                                             Predicting...
                                         </span>
                                     ) : (
-                                        "GO"
+                                        "Predict"
                                     )}
                                 </button>
                             </div>
@@ -300,7 +312,7 @@ export default function EPLPredictor() {
                                 {/* Score Summary Section */}
                                 <section className="mb-8 p-6 bg-gray-50 dark:bg-gray-800/40 border border-gray-800 dark:border-gray-700 rounded-lg">
                                     <h2 className="text-xs font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2 font-mono">
-                                        Predicted Outcome
+                                        Most Probable Outcome
                                     </h2>
                                     <div className="flex justify-between items-center py-4 border-b border-dashed border-gray-300 dark:border-gray-700">
                                         {/* Home */}
@@ -414,13 +426,12 @@ export default function EPLPredictor() {
                                 {/* Score Probability Heatmap */}
                                 <section className="mb-8">
                                     <h2 className="text-md font-bold mb-4 uppercase text-gray-800 dark:text-gray-200 border-b border-gray-300 dark:border-gray-700 pb-1">
-                                        Score Probability Matrix (6x6 Heatmap)
+                                        Score Probability Matrix
                                     </h2>
                                     <p className="text-xs text-gray-500 dark:text-gray-400 mb-4 text-justify leading-relaxed">
                                         The matrix below maps the statistical likelihood of specific
                                         score lines. Shaded intensities indicate higher probability
-                                        levels. Double-check intersections for predicted outcome
-                                        details.
+                                        levels.
                                     </p>
 
                                     <div className="overflow-x-auto pb-2">
@@ -480,7 +491,7 @@ export default function EPLPredictor() {
                                                                     </span>
                                                                     {isHighlight && (
                                                                         <span className="text-[9px] uppercase tracking-tighter font-extrabold text-red-500 dark:text-red-400 font-sans mt-0.5 animate-pulse">
-                                                                            PREDICTED
+                                                                            Most Probable
                                                                         </span>
                                                                     )}
                                                                 </div>
@@ -496,13 +507,12 @@ export default function EPLPredictor() {
                                 {/* Under the Hood Insights Section */}
                                 <section className="mb-6">
                                     <h2 className="text-md font-bold mb-4 uppercase text-gray-800 dark:text-gray-200 border-b border-gray-300 dark:border-gray-700 pb-1">
-                                        Model Features & Insights
+                                        Model Features
                                     </h2>
                                     <p className="text-xs text-gray-500 dark:text-gray-400 mb-4 text-justify leading-relaxed">
-                                        Below are the key quantitative team differentials factored
-                                        in by the classification model for predicting goal
-                                        expectations. Differences are calculated as [Home Stats] -
-                                        [Away Stats].
+                                        Key quantitative team differentials factored
+                                        in by the classification model for the match prediction.
+                                        Differences are calculated as [Home Stats] - [Away Stats].
                                     </p>
 
                                     <div className="border border-gray-800 dark:border-gray-700 rounded-lg overflow-hidden select-none">
