@@ -176,8 +176,8 @@ export default function EPLPredictor() {
                                         <div className="relative flex items-center justify-center">
 
                                             {/* VS Circle */}
-                                            <div className="relative h-20 w-20 rounded-full bg-dark  border-2 border-white/60 flex items-center justify-center shadow-lg dark:bg-light">
-                                                <span className="text-white font-black text-2xl tracking-widest dark:text-dark">
+                                            <div className="relative h-20 w-20 md:h-12 md:w-12 lg:h-16 lg:w-16 rounded-full bg-dark  border-2 border-white/60 flex items-center justify-center shadow-lg dark:bg-light">
+                                                <span className="text-white font-black text-xl tracking-widest dark:text-dark">
                                                     VS
                                                 </span>
                                             </div>
@@ -563,7 +563,7 @@ export default function EPLPredictor() {
 
                         {/* Document Footer (Resume footer style) */}
                         <footer className="mt-8 pt-4 border-t border-gray-300 dark:border-gray-700 text-center text-[10px] text-gray-500 dark:text-gray-400 font-mono">
-                             EPL Predictor Report | Compiled on Sagar Adhikari&apos;s Research Environment
+                             EPL Matchup Prediction Report | Built with Hugging Face Spaces 
                         </footer>
                     </article>
                 </Layout>
