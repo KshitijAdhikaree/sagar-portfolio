@@ -20,25 +20,24 @@ export default function EPLPredictor() {
     const [error, setError] = useState("");
     const [prediction, setPrediction] = useState(null);
     const [teams, setTeams] = useState([]);
+    const [teamsLoading, setTeamsLoading] = useState(true);
 
     useEffect(() => {
         const fetchTeams = async () => {
             try {
-                const res = await fetch("/api/teams");
-                if (!res.ok) {
-                    throw new Error(
-                        "Failed to retrieve teams list from prediction engine.",
-                    );
-                }
-                const data = await res.json();
-                setTeams(data);
-            } catch (err) {
-                console.error(err);
-                setError(
-                    "Failed to fetch team list. Please verify that the Hugging Face Space is active.",
-                );
+                setTeamsLoading(true);
+
+                const response = await fetch("/api/teams");
+                const data = await response.json();
+
+                setTeams(data || []);
+            } catch (error) {
+                console.error(error);
+            } finally {
+                setTeamsLoading(false);
             }
         };
+
         fetchTeams();
     }, []);
 
@@ -90,8 +89,8 @@ export default function EPLPredictor() {
                         text="EPL Matchup Predictor"
                         className="mb-8 lg:!text-7xl sm:mb-8 sm:!text-4xl xs:!text-2xl text-center "
                     />
-                  <article
-  className="
+                    <article
+                        className="
     w-full relative
     rounded-3xl
     border border-dark dark:border-light
@@ -99,7 +98,7 @@ export default function EPLPredictor() {
     p-10
     shadow-[0_35px_60px_-15px_rgba(0,0,0,0.35)]
   "
->
+                    >
                         <div
                             className="absolute top-0 -right-3 -z-10 w-[101%] h-[101%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[101%] xs:w-[100%] xs:rounded-[1.5rem]"
                         />
@@ -134,177 +133,183 @@ export default function EPLPredictor() {
                         </header>
 
                         {/* Selection Form Section */}
-                        <form onSubmit={handlePredict} className="space-y-8">
-                            <div className="relative">
-                                <div className="grid grid-cols-5 gap-6 items-center">
+                       <form onSubmit={handlePredict} className="space-y-8">
+  {teamsLoading ? (
+    <div className="space-y-8 animate-pulse">
+      {/* Team Selection Skeleton */}
+      <div className="grid grid-cols-5 gap-6 items-center">
+        <div className="col-span-2">
+          <div className="rounded-2xl border border-blue-500/20 p-5">
+            <div className="h-4 w-24 rounded bg-gray-200 dark:bg-slate-800 mb-4" />
+            <div className="h-12 rounded-xl bg-gray-200 dark:bg-slate-800" />
+          </div>
+        </div>
 
-                                    {/* Home Team */}
-                                    <div className="col-span-2">
-                                        <div className="bg-gradient-to-br from-blue-500/10 to-blue-700/10 border border-blue-500/30 rounded-2xl p-5 backdrop-blur">
-                                            <label className="block text-xs uppercase tracking-widest font-bold text-blue-400 mb-3">
-                                                Home Team
-                                            </label>
+        <div className="flex justify-center">
+          <div className="h-20 w-20 rounded-full bg-gray-200 dark:bg-slate-800" />
+        </div>
 
-                                            <select
-                                                value={homeTeam}
-                                                onChange={(e) => setHomeTeam(e.target.value)}
-                                                className=" w-full rounded-xl  border border-blue-500/30  bg-white dark:bg-slate-900  text-slate-900 dark:text-white px-4 py-3 text-sm font-medium  focus:outline-none   focus:ring-2 focus:ring-blue-500   focus:border-blue-500 "
-                                            >
-                                                <option
-                                                    value=""
-                                                    className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                                                >
-                                                    Select Team
-                                                </option>
+        <div className="col-span-2">
+          <div className="rounded-2xl border border-red-500/20 p-5">
+            <div className="h-4 w-24 rounded bg-gray-200 dark:bg-slate-800 mb-4" />
+            <div className="h-12 rounded-xl bg-gray-200 dark:bg-slate-800" />
+          </div>
+        </div>
+      </div>
 
-                                                {teams.map((team) => (
-                                                    <option
-                                                        key={team}
-                                                        value={team}
-                                                        className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                                                    >
-                                                        {team}
-                                                    </option>
-                                                ))}
-                                            </select>
+      {/* Model Skeleton */}
+      <div className="max-w-md mx-auto">
+        <div className="h-4 w-40 rounded bg-gray-200 dark:bg-slate-800 mb-3" />
+        <div className="h-12 rounded-xl bg-gray-200 dark:bg-slate-800" />
+      </div>
 
-                                        </div>
-                                    </div>
+      {/* Button Skeleton */}
+      <div className="flex justify-center pb-12">
+        <div className="h-14 w-48 rounded-2xl bg-gray-200 dark:bg-slate-800" />
+      </div>
 
-                                    {/* VS */}
-                                    <div className="flex justify-center">
-                                        <div className="relative flex items-center justify-center">
+      {/* Loading Text */}
+      <div className="flex justify-center">
+        <div className="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
+          <div className="h-5 w-5 rounded-full border-2 border-blue-500 border-t-transparent animate-spin" />
+          Loading teams...
+        </div>
+      </div>
+    </div>
+  ) : (
+    <>
+      {/* Team Selection */}
+      <div className="grid grid-cols-5 gap-6 items-center">
+        {/* Home Team */}
+        <div className="col-span-2">
+          <div className="bg-gradient-to-br from-blue-500/10 to-blue-700/10 border border-blue-500/30 rounded-2xl p-5 backdrop-blur">
+            <label className="block text-xs uppercase tracking-widest font-bold text-blue-400 mb-3">
+              Home Team
+            </label>
 
-                                            {/* VS Circle */}
-                                            <div className="relative h-20 w-20 rounded-full bg-dark  border-2 border-white/60 flex items-center justify-center shadow-lg dark:bg-light">
-                                                <span className="text-white font-black text-2xl tracking-widest dark:text-dark">
-                                                    VS
-                                                </span>
-                                            </div>
+            <select
+              value={homeTeam}
+              onChange={(e) => setHomeTeam(e.target.value)}
+              className="w-full rounded-xl border border-blue-500/30 bg-white dark:bg-slate-900 text-slate-900 dark:text-white px-4 py-3"
+            >
+              <option value="">Select Team</option>
 
-                                        </div>
-                                    </div>
+              {teams.map((team) => (
+                <option key={team} value={team}>
+                  {team}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
 
-                                    {/* Away Team */}
-                                    <div className="col-span-2">
-                                        <div className="bg-gradient-to-br from-red-500/10 to-red-700/10 border border-red-500/30 rounded-2xl p-5 backdrop-blur">
-                                            <label className="block text-xs uppercase tracking-widest font-bold text-red-400 mb-3">
-                                                Away Team
-                                            </label>
+        {/* VS */}
+        <div className="flex justify-center">
+          <div className="relative h-20 w-20 rounded-full bg-dark border-2 border-white/60 flex items-center justify-center shadow-lg dark:bg-light">
+            <span className="text-white font-black text-2xl tracking-widest dark:text-dark">
+              VS
+            </span>
+          </div>
+        </div>
 
-                                            <select
-                                                value={awayTeam}
-                                                onChange={(e) => setAwayTeam(e.target.value)}
-                                                className="
-    w-full
-    rounded-xl
-    border border-red-500/30
-    bg-white dark:bg-slate-900
-    text-slate-900 dark:text-white
-    px-4 py-3
-    text-sm font-medium
-    focus:outline-none
-    focus:ring-2 focus:ring-red-500
-    focus:border-red-500
-  "
-                                            >
-                                                <option
-                                                    value=""
-                                                    className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                                                >
-                                                    Select Team
-                                                </option>
+        {/* Away Team */}
+        <div className="col-span-2">
+          <div className="bg-gradient-to-br from-red-500/10 to-red-700/10 border border-red-500/30 rounded-2xl p-5 backdrop-blur">
+            <label className="block text-xs uppercase tracking-widest font-bold text-red-400 mb-3">
+              Away Team
+            </label>
 
-                                                {teams.map((team) => (
-                                                    <option
-                                                        key={team}
-                                                        value={team}
-                                                        className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                                                    >
-                                                        {team}
-                                                    </option>
-                                                ))}
-                                            </select>
+            <select
+              value={awayTeam}
+              onChange={(e) => setAwayTeam(e.target.value)}
+              className="w-full rounded-xl border border-red-500/30 bg-white dark:bg-slate-900 text-slate-900 dark:text-white px-4 py-3"
+            >
+              <option value="">Select Team</option>
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+              {teams.map((team) => (
+                <option key={team} value={team}>
+                  {team}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+      </div>
 
-                            {/* Model */}
-                            <div className="max-w-md mx-auto">
-                                <label className="block text-xs uppercase tracking-widest font-bold mb-2">
-                                    Prediction Model
-                                </label>
+      {/* Model */}
+      <div className="max-w-md mx-auto">
+        <label className="block text-xs uppercase tracking-widest font-bold mb-2">
+          Prediction Model
+        </label>
 
-                                <select
-                                    value={model}
-                                    onChange={(e) => setModel(e.target.value)}
-                                    className="w-full bg-light border border-gray-700 rounded-xl px-4 py-3 dark:bg-dark"
-                                >
-                                    <option value="XGBoost">⚡ XGBoost</option>
-                                    <option value="Random_Forest">🌲 Random Forest</option>
-                                    <option value="Gradient_Boosting">📈 Gradient Boosting</option>
-                                </select>
-                            </div>
+        <select
+          value={model}
+          onChange={(e) => setModel(e.target.value)}
+          className="w-full bg-light border border-gray-700 rounded-xl px-4 py-3 dark:bg-dark"
+        >
+          <option value="XGBoost">⚡ XGBoost</option>
+          <option value="Random_Forest">🌲 Random Forest</option>
+          <option value="Gradient_Boosting">📈 Gradient Boosting</option>
+        </select>
+      </div>
 
-                            {/* Predict Button */}
-                            <div className="flex justify-center pb-12">
-                                
-                                <button
-                                    type="submit"
-                                    disabled={
-                                        loading ||
-                                        !homeTeam ||
-                                        !awayTeam ||
-                                        homeTeam === awayTeam
-                                    }
-                                    className="
-      relative overflow-hidden
-      bg-dark border border-light
-      dark:bg-light dark:border-dark dark:text-dark
-      text-white font-black tracking-widest
-      px-12 py-4 rounded-2xl
-      shadow-xl
-      transition-all duration-300
-      hover:scale-105
-      disabled:opacity-60 disabled:cursor-not-allowed
-      min-w-[180px]
-    "
-                                >
-                                    {/* Ping Animation */}
-                                <div className="absolute h-10 w-24 rounded-full bg-blue-500/20 animate-ping" />
-                                    {loading ? (
-                                        <span className="flex items-center justify-center gap-3 uppercase">
-                                            <svg
-                                                className="h-5 w-5 animate-spin"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                            >
-                                                <circle
-                                                    className="opacity-25"
-                                                    cx="12"
-                                                    cy="12"
-                                                    r="10"
-                                                    stroke="currentColor"
-                                                    strokeWidth="4"
-                                                />
-                                                <path
-                                                    className="opacity-75"
-                                                    fill="currentColor"
-                                                    d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
-                                                />
-                                            </svg>
+      {/* Predict Button */}
+      <div className="flex justify-center pb-12">
+        <button
+          type="submit"
+          disabled={
+            loading ||
+            !homeTeam ||
+            !awayTeam ||
+            homeTeam === awayTeam
+          }
+          className="
+            relative overflow-hidden
+            bg-dark border border-light
+            dark:bg-light dark:border-dark dark:text-dark
+            text-white font-black tracking-widest
+            px-12 py-4 rounded-2xl
+            shadow-xl
+            transition-all duration-300
+            hover:scale-105
+            disabled:opacity-60 disabled:cursor-not-allowed
+            min-w-[180px]
+          "
+        >
+          <div className="absolute h-10 w-24 rounded-full bg-blue-500/20 animate-ping" />
 
-                                            Predicting...
-                                        </span>
-                                    ) : (
-                                        "Predict"
-                                    )}
-                                </button>
-                            </div>
-                        </form>
+          {loading ? (
+            <span className="flex items-center justify-center gap-3 uppercase">
+              <svg
+                className="h-5 w-5 animate-spin"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                />
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                />
+              </svg>
+              Predicting...
+            </span>
+          ) : (
+            "Predict"
+          )}
+        </button>
+      </div>
+    </>
+  )}
+</form>
 
                         {/* Results Block */}
                         {prediction && (
@@ -563,7 +568,7 @@ export default function EPLPredictor() {
 
                         {/* Document Footer (Resume footer style) */}
                         <footer className="mt-8 pt-4 border-t border-gray-300 dark:border-gray-700 text-center text-[10px] text-gray-500 dark:text-gray-400 font-mono">
-                             EPL Predictor Report | Compiled on Sagar Adhikari&apos;s Research Environment
+                            EPL Predictor Report | Compiled on Sagar Adhikari&apos;s Research Environment
                         </footer>
                     </article>
                 </Layout>
